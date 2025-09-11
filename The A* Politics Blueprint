@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The A* Politics Blueprint</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+
+    <div class="bg-white rounded-xl shadow-lg p-8 w-full max-w-2xl">
+        <!-- Header Section -->
+        <header class="text-center mb-8">
+            <!-- SVG Logo -->
+            <svg class="w-24 h-24 text-indigo-600 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M4 2.5a.5.5 0 01.5-.5h15a.5.5 0 01.5.5v19a.5.5 0 01-.5.5h-15a.5.5 0 01-.5-.5v-19z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                <path d="M7 6h10M7 10h10M7 14h6M7 18h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M17.792 18.257l2.454 1.258-1.527-2.784 2.454-1.258-2.721-.295-1.527-2.784-1.527 2.784-2.72.295 2.454 1.258-1.527 2.784 2.454-1.258z" fill="currentColor" stroke="currentColor" stroke-width="0" />
+            </svg>
+            <h1 class="text-5xl font-bold text-gray-800">The A* Politics Blueprint</h1>
+            <p class="text-xl text-gray-500 mt-4">Unlock the blueprint for political success.</p>
+        </header>
+
+        <!-- Product Description -->
+        <section class="mb-8">
+            <p class="text-gray-600 leading-relaxed text-center">
+                My blueprints provide a comprehensive guide to achieving A* results in your politics exams. Based on my own experience as a former A-Level and Politics student who achieved an A* grade, these resources break down complex political theories and concepts into easy-to-understand frameworks, giving you the edge you need to succeed.
+            </p>
+        </section>
+
+        <!-- Product Call to Action -->
+        <section class="text-center mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+                Get the Blueprint
+            </h2>
+            <p class="text-gray-600 mb-6">
+                Ready to transform your grades? Click the button below to get instant access to the digital blueprints.
+            </p>
+            <!-- Replace 'YOUR_PRODUCT_ID' with the unique ID from your Gumroad product page -->
+            <a href="https://gumroad.com/l/ozfurb" class="gumroad-button inline-block bg-indigo-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105" data-gumroad-product-id="ozfurb">
+                Buy Now
+            </a>
+        </section>
+
+        <hr class="border-t border-gray-200 my-8">
+
+        <!-- Tutoring Call to Action -->
+        <section class="text-center">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+                Need a Tutor?
+            </h2>
+            <p class="text-gray-600 mb-6">
+                For a more personalized approach, we offer one-on-one tutoring sessions.
+            </p>
+            <!-- Replace the href with your Google Form or Tally.so link -->
+            <a href="#" class="inline-block bg-white text-indigo-600 font-bold py-3 px-8 rounded-full border-2 border-indigo-600 shadow-md hover:bg-gray-50 transition duration-300 transform hover:scale-105">
+                Enquire About Tutoring
+            </a>
+        </section>
+    </div>
+
+    <!-- Gumroad Widget Script -->
+    <script src="https://gumroad.com/js/gumroad.js"></script>
+
+</body>
+</html>
