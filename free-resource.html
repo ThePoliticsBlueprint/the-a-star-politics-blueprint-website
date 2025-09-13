@@ -106,6 +106,56 @@
             </a>
         </div>
     </div>
+  <!-- New JavaScript Block for Event Tracking -->
+    <script>
+        // 1. Get a reference to all the buttons and links you want to track
+        const tutoringButtons = document.querySelectorAll('.tutoring-button');
+        const gumroadLinks = document.querySelectorAll('.gumroad-button');
 
+        // 2. Add an event listener to the tutoring buttons
+        tutoringButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                gtag('event', 'tutoring_inquiry_click', {
+                    'event_category': 'Call_to_Action',
+                    'event_label': 'Enquire about tutoring'
+                });
+                console.log('Event sent: tutoring_inquiry_click');
+            });
+        });
+
+        // 3. Add an event listener to the Gumroad links
+        gumroadLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                const productTitle = link.querySelector('h3').innerText;
+                gtag('event', 'product_link_click', {
+                    'event_category': 'Product_Link',
+                    'event_label': productTitle
+                });
+                console.log(`Event sent: product_link_click - ${productTitle}`);
+            });
+        });
+        
+        // 4. Track scroll depth
+        let hasScrolledToBottom = false;
+        const scrollHandler = () => {
+            // Calculate how far the user has scrolled down the page
+            const scrollPosition = window.scrollY + window.innerHeight;
+            const totalHeight = document.body.offsetHeight;
+
+            // Trigger the event when the user is 90% of the way down the page
+            if (scrollPosition >= totalHeight * 0.9 && !hasScrolledToBottom) {
+                gtag('event', 'scroll_depth_90', {
+                    'event_category': 'Engagement',
+                    'event_label': 'Scrolled to 90% of page'
+                });
+                hasScrolledToBottom = true;
+                console.log('Event sent: scroll_depth_90');
+                // You can remove the listener after it fires once
+                window.removeEventListener('scroll', scrollHandler);
+            }
+        };
+
+        window.addEventListener('scroll', scrollHandler);
+    </script>
 </body>
 </html>
