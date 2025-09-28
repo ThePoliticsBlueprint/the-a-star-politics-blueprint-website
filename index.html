@@ -169,16 +169,76 @@ This isn't just about notes; it's about giving you the edge you need to get that
         </section>
     </div>
 
+      <!-- NEW: High-Impact Slide-In Lead Magnet -->
+    <div id="slide-in-cta" class="fixed bottom-4 right-4 z-50 p-6 max-w-sm w-full bg-red-700 text-white rounded-xl shadow-2xl transition-transform duration-500 ease-out">
+        <button id="dismiss-cta" aria-label="Dismiss" class="absolute top-2 right-2 text-red-300 hover:text-white transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <div class="flex items-center space-x-3 mb-3">
+            <span class="text-2xl font-extrabold text-yellow-300">⚡️</span>
+            <p class="text-lg font-bold leading-tight">
+                STOP WASTING TIME!
+            </p>
+        </div>
+        <!-- Updated description focusing on the Evaluation -->
+        <p class="text-sm text-red-100 mb-4">
+            Download your FREE, instant **Politics Strategy Evaluation** to pinpoint your weakest areas and prioritize revision like an A* student.
+        </p>
+        <a href="free-resource.html" class="lead-magnet-button w-full inline-block text-center bg-yellow-300 text-red-800 font-extrabold py-3 px-4 rounded-lg shadow-xl hover:bg-yellow-400 transition duration-300 transform hover:scale-[1.02]">
+            Get Your FREE Evaluation Now
+        </a>
+    </div>
+
     <!-- Gumroad Widget Script -->
     <script src="https://gumroad.com/js/gumroad.js"></script>
 
-  <!-- New JavaScript Block for Event Tracking -->
+  <!-- New JavaScript Block for Event Tracking and Slide-In Logic -->
     <script>
-        // 1. Get a reference to all the buttons and links you want to track
+        // --- System Variables ---
+        const CTA_DELAY_MS = 3000; // 3 second delay for the slide-in box to appear
+        const CTA_KEY = 'politics_cta_dismissed'; // Local storage key to prevent showing repeatedly
+
+        // --- Element References ---
         const tutoringButtons = document.querySelectorAll('.tutoring-button');
         const gumroadLinks = document.querySelectorAll('.gumroad-button');
+        const leadMagnetButtons = document.querySelectorAll('.lead-magnet-button');
+        const slideInCta = document.getElementById('slide-in-cta');
+        const dismissCta = document.getElementById('dismiss-cta');
 
-        // 2. Add an event listener to the tutoring buttons
+        // --- Slide-In Logic ---
+
+        const showSlideInCta = () => {
+            // Only show if the user hasn't dismissed it in this session
+            if (localStorage.getItem(CTA_KEY) !== 'true') {
+                setTimeout(() => {
+                    slideInCta.classList.add('slide-in-active');
+                    console.log('Slide-in CTA shown after delay.');
+                }, CTA_DELAY_MS);
+            }
+        };
+
+        const dismissSlideInCta = () => {
+            slideInCta.classList.remove('slide-in-active');
+            localStorage.setItem(CTA_KEY, 'true'); // Set flag to prevent showing again
+            gtag('event', 'lead_magnet_dismiss', {
+                'event_category': 'Call_to_Action',
+                'event_label': 'Slide-In CTA Dismissed'
+            });
+            console.log('Slide-in CTA dismissed and tracking sent.');
+        };
+
+        // Attach dismiss listener
+        dismissCta.addEventListener('click', dismissSlideInCta);
+
+        // Show the CTA on page load after the delay
+        showSlideInCta();
+
+
+        // --- Analytics Tracking ---
+
+        // 1. Track the tutoring buttons
         tutoringButtons.forEach(button => {
             button.addEventListener('click', () => {
                 gtag('event', 'tutoring_inquiry_click', {
@@ -189,7 +249,7 @@ This isn't just about notes; it's about giving you the edge you need to get that
             });
         });
 
-        // 3. Add an event listener to the Gumroad links
+        // 2. Track the Gumroad links
         gumroadLinks.forEach(link => {
             link.addEventListener('click', () => {
                 const productTitle = link.querySelector('h3').innerText;
@@ -200,11 +260,21 @@ This isn't just about notes; it's about giving you the edge you need to get that
                 console.log(`Event sent: product_link_click - ${productTitle}`);
             });
         });
-        
+        
+        // 3. Track the NEW Slide-In CTA button clicks
+        leadMagnetButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                gtag('event', 'lead_magnet_slide_in_click', {
+                    'event_category': 'Call_to_Action',
+                    'event_label': 'Get Free Evaluation (Slide-In)'
+                });
+                console.log('Event sent: lead_magnet_slide_in_click');
+            });
+        });
+        
         // 4. Track scroll depth
         let hasScrolledToBottom = false;
         const scrollHandler = () => {
-            // Calculate how far the user has scrolled down the page
             const scrollPosition = window.scrollY + window.innerHeight;
             const totalHeight = document.body.offsetHeight;
 
@@ -216,7 +286,6 @@ This isn't just about notes; it's about giving you the edge you need to get that
                 });
                 hasScrolledToBottom = true;
                 console.log('Event sent: scroll_depth_90');
-                // You can remove the listener after it fires once
                 window.removeEventListener('scroll', scrollHandler);
             }
         };
