@@ -13,9 +13,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A-Level Politics Free Resources</title>
+    <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f3f4f6;
@@ -38,15 +39,18 @@
             <a href="tutoring.html" class="hover:text-indigo-600 transition-colors duration-300 px-4 py-2 rounded-lg">Tutoring</a>
         </nav>
 
+        <!-- Main Resource Grid Container -->
+        <!-- Changed the internal grid structure to integrate the new full-width bar -->
         <div class="bg-gray-50 px-6 py-8 sm:px-10 sm:py-12 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
-            <!-- Featured Articles Section -->
+            <!-- Section 1: Featured Articles (Wrapper spans 3 columns, uses internal 2-column grid for layout) -->
             <div class="col-span-1 md:col-span-2 lg:col-span-3 grid grid-cols-1 lg:grid-cols-2 gap-8">
                 
                 <!-- Featured Article: The End of Federalism? -->
                 <div class="bg-white rounded-xl shadow-md p-6 border-2 border-indigo-200 transform hover:scale-105 transition duration-300">
                     <div class="flex items-center space-x-4 mb-4">
                         <span class="inline-block bg-indigo-500 text-white rounded-full p-2">
+                            <!-- Book icon -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.488 9.222 5 7.5 5S4.168 5.488 3 6.253v13C4.168 18.488 5.778 18 7.5 18s3.332.488 4.5 1.253m0-13C13.168 5.488 14.778 5 16.5 5c1.722 0 3.332.488 4.5 1.253v13C19.832 18.488 18.222 18 16.5 18c-1.722 0-3.332.488-4.5 1.253"/>
                             </svg>
@@ -55,7 +59,7 @@
                     </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-2 leading-tight">The End of US Federalism?</h3>
                     <p class="text-gray-700 mb-4 text-sm">Has the USA's 'layer-cake' system been completely replaced by a 'marble-cake' of overreaching federal power? A perfect micro-lesson to get you started on your essay.</p>
-                    <a href="https://blueprintpolitics.gumroad.com/l/xgcqx" class="inline-block bg-indigo-600 text-white font-semibold py-2 px-4 rounded-full shadow-md hover:bg-indigo-700 transition duration-300">
+                    <a href="https://blueprintpolitics.gumroad.com/l/xgcqx" class="inline-block bg-indigo-600 text-white font-semibold py-2 px-4 rounded-full shadow-md hover:bg-indigo-700 transition duration-300 gumroad-button">
                         Read the Full Lesson
                     </a>
                 </div>
@@ -64,6 +68,7 @@
                 <div class="bg-white rounded-xl shadow-md p-6 border-2 border-purple-200 transform hover:scale-105 transition duration-300">
                     <div class="flex items-center space-x-4 mb-4">
                         <span class="inline-block bg-purple-500 text-white rounded-full p-2">
+                            <!-- Document icon -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                             </svg>
@@ -72,41 +77,46 @@
                     </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-2 leading-tight">Top 5 Common Mistakes</h3>
                     <p class="text-gray-700 mb-4 text-sm">Are you making these common errors? Avoid these pitfalls to boost your grade and impress your examiner. Don't fall into the same traps as thousands of other students.</p>
-                    <a href="https://blueprintpolitics.gumroad.com/l/tfxvkw" class="inline-block bg-purple-600 text-white font-semibold py-2 px-4 rounded-full shadow-md hover:bg-purple-700 transition duration-300">
+                    <a href="https://blueprintpolitics.gumroad.com/l/tfxvkw" class="inline-block bg-purple-600 text-white font-semibold py-2 px-4 rounded-full shadow-md hover:bg-purple-700 transition duration-300 gumroad-button">
                         Read the Full Article
                     </a>
                 </div>
             </div>
 
-<!-- NEW: Full-Width Evaluation Strategy Guide Bar -->
-<div class="col-span-1 md:col-span-2 bg-white rounded-xl shadow-xl p-8 flex flex-col md:flex-row items-center justify-between border-t-4 border-teal-500 hover:shadow-2xl transition duration-300">
-    <div class="flex items-start space-x-5 mb-4 md:mb-0 w-full">
-        <span class="p-3 bg-teal-100 rounded-full text-teal-700 flex-shrink-0 mt-1">
-            <!-- Target Icon (Lucide-react/similar SVG replacement) -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-            </svg>
-        </span>
-        <div>
-            <p class="text-xl font-bold text-teal-700 leading-tight">THE A* GRADING FRAMEWORK</p>
-            <h3 class="text-3xl font-extrabold text-gray-900 mb-1">Evaluation Strategy Guide: The S-T-A-R Framework</h3>
-            <p class="text-gray-600">
-                This comprehensive guide breaks down the simple 4-step framework used by top students to guarantee an A* grade on every evaluation-based essay. Stop guessing and start structuring for success.
-            </p>
-        </div>
-    </div>
-    <!-- The button is full width on mobile, and centered/fixed width on desktop -->
-    <a href="https://blueprintpolitics.gumroad.com/l/xncoa" class="w-full md:w-auto md:flex-shrink-0 inline-block text-center bg-teal-600 text-white font-extrabold py-3 px-8 rounded-lg shadow-lg hover:bg-teal-700 transition duration-300 transform hover:scale-[1.01]">
-        Download Guide
-    </a>
-</div>
-            <!-- Other resource cards -->
+            <!-- Section 2: Full-Width Evaluation Strategy Guide Bar -->
+            <!-- Use lg:col-span-3 to ensure it spans the full width of the main 3-column grid on desktop -->
+            <div class="col-span-1 sm:col-span-2 lg:col-span-3 bg-teal-50 rounded-xl shadow-xl p-8 flex flex-col md:flex-row items-center justify-between border-t-4 border-teal-500 hover:shadow-2xl transition duration-300">
+                <div class="flex items-start space-x-5 mb-4 md:mb-0 w-full">
+                    <span class="p-3 bg-teal-200 rounded-full text-teal-700 flex-shrink-0 mt-1">
+                        <!-- Target/Strategy Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                        </svg>
+                    </span>
+                    <div>
+                        <p class="text-xl font-bold text-teal-700 leading-tight">THE A* GRADING FRAMEWORK</p>
+                        <h3 class="text-3xl font-extrabold text-gray-900 mb-1">Evaluation Strategy Guide: The S-T-A-R Framework</h3>
+                        <p class="text-gray-600">
+                            This comprehensive guide breaks down the simple 4-step framework used by top students to guarantee an A* grade on every evaluation-based essay. Stop guessing and start structuring for success.
+                        </p>
+                    </div>
+                </div>
+                <!-- Button to Download -->
+                <a href="https://blueprintpolitics.gumroad.com/l/xncoa" class="w-full md:w-auto md:flex-shrink-0 inline-block text-center bg-teal-600 text-white font-extrabold py-3 px-8 rounded-full shadow-lg hover:bg-teal-700 transition duration-300 transform hover:scale-[1.01] gumroad-button">
+                    Download Guide
+                </a>
+            </div>
+            
+            <!-- Section 3: Other resource cards (Flow in three columns) -->
+
+            <!-- Exam Checklist (Now placed after the full-width bar) -->
             <div class="bg-white rounded-xl shadow-md p-6">
                 <div class="flex items-center space-x-4 mb-4">
                     <span class="inline-block bg-green-500 text-white rounded-full p-2">
+                        <!-- Checklist icon -->
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-                            </svg>
+                        </svg>
                     </span>
                     <h3 class="text-xl font-bold text-gray-800">Exam Checklist</h3>
                 </div>
@@ -114,12 +124,14 @@
                 <a href="#" class="inline-block mt-4 text-indigo-600 font-semibold hover:text-indigo-800 transition duration-300">Coming Soon →</a>
             </div>
 
+            <!-- Flashcard Sets -->
             <div class="bg-white rounded-xl shadow-md p-6">
                 <div class="flex items-center space-x-4 mb-4">
                     <span class="inline-block bg-yellow-500 text-white rounded-full p-2">
+                        <!-- Flashcard icon -->
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.5-1.5l-6-6-6 6z"/>
-                            </svg>
+                        </svg>
                     </span>
                     <h3 class="text-xl font-bold text-gray-800">Flashcard Sets</h3>
                 </div>
@@ -127,12 +139,14 @@
                 <a href="#" class="inline-block mt-4 text-indigo-600 font-semibold hover:text-indigo-800 transition duration-300">Coming Soon →</a>
             </div>
 
+            <!-- Sample Essays -->
             <div class="bg-white rounded-xl shadow-md p-6">
                 <div class="flex items-center space-x-4 mb-4">
                     <span class="inline-block bg-pink-500 text-white rounded-full p-2">
+                        <!-- Video icon -->
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
-                            </svg>
+                        </svg>
                     </span>
                     <h3 class="text-xl font-bold text-gray-800">Sample Essays</h3>
                 </div>
@@ -142,14 +156,16 @@
 
         </div>
 
+        <!-- Footer Call to Action -->
         <div class="px-6 py-8 sm:px-10 sm:py-12 bg-indigo-600 text-white text-center">
             <h2 class="text-3xl sm:text-4xl font-bold mb-2">Ready to take the next step?</h2>
             <p class="text-lg mb-6 max-w-2xl mx-auto">Our tutoring helps you go from stressed to confident. Register with our tutoring team to see how we can help you achieve your target grades</p>
-            <a href="tutoring.html" class="inline-block bg-white text-indigo-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300">
+            <a href="tutoring.html" class="inline-block bg-white text-indigo-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300 tutoring-button">
                 Enquire about tutoring
             </a>
         </div>
     </div>
+    
     <!-- New JavaScript Block for Event Tracking -->
     <script>
         // 1. Get a reference to all the buttons and links you want to track
@@ -170,7 +186,17 @@
         // 3. Add an event listener to the Gumroad links
         gumroadLinks.forEach(link => {
             link.addEventListener('click', () => {
-                const productTitle = link.querySelector('h3').innerText;
+                // Find the nearest title to identify the product
+                const productCard = link.closest('.bg-white, .bg-teal-50');
+                let productTitle = 'Unknown Product';
+
+                if (productCard) {
+                    const titleElement = productCard.querySelector('h3');
+                    if (titleElement) {
+                        productTitle = titleElement.innerText;
+                    }
+                }
+
                 gtag('event', 'product_link_click', {
                     'event_category': 'Product_Link',
                     'event_label': productTitle
