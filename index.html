@@ -208,10 +208,12 @@ This isn't just about notes; it's about giving you the edge you need to get that
 
         // --- Slide-In Logic ---
 
+
         const showSlideInCta = () => {
             // Only show if the user hasn't dismissed it in this session
             if (localStorage.getItem(CTA_KEY) !== 'true') {
                 setTimeout(() => {
+                    // This is where the slide-in class is added, triggering the CSS transition
                     slideInCta.classList.add('slide-in-active');
                     console.log('Slide-in CTA shown after delay.');
                 }, CTA_DELAY_MS);
@@ -219,6 +221,7 @@ This isn't just about notes; it's about giving you the edge you need to get that
         };
 
         const dismissSlideInCta = () => {
+            // This is where the slide-in class is removed, triggering the slide-out via CSS transition
             slideInCta.classList.remove('slide-in-active');
             localStorage.setItem(CTA_KEY, 'true'); // Set flag to prevent showing again
             gtag('event', 'lead_magnet_dismiss', {
@@ -228,7 +231,7 @@ This isn't just about notes; it's about giving you the edge you need to get that
             console.log('Slide-in CTA dismissed and tracking sent.');
         };
 
-        // Attach dismiss listener
+        // This line makes the 'X' button work by attaching the dismiss function
         dismissCta.addEventListener('click', dismissSlideInCta);
 
         // Show the CTA on page load after the delay
