@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><!-- Google tag (gtag.js) -->
+<head>
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WN81B5CMGH"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -18,8 +19,23 @@
         body {
             font-family: 'Inter', sans-serif;
         }
-        </style>
-    </head>
+        
+        /* FIXED: Added CSS for slide-in animation */
+        #slide-in-cta {
+            transform: translateX(120%);
+            transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        
+        #slide-in-cta.slide-in-active {
+            transform: translateX(0);
+        }
+        
+        /* FIXED: Add styles for when dismissed */
+        #slide-in-cta.slide-out {
+            transform: translateX(120%);
+        }
+    </style>
+</head>
 <body class="bg-gray-100">
   
     <!-- Tutoring Call to Action (Top Widget) - Fixed position -->
@@ -154,7 +170,7 @@ This isn't just about notes; it's about giving you the edge you need to get that
             </div>
         </section>
       
- <!-- Tutoring Call to Action (Bottom Section) -->
+        <!-- Tutoring Call to Action (Bottom Section) -->
         <section class="bg-indigo-600 rounded-xl shadow-2xl p-8 text-center text-white transition transform hover:scale-[1.01]">
             <h2 class="text-3xl font-extrabold mb-4">
                 Need Personalised A* Guidance?
@@ -162,14 +178,13 @@ This isn't just about notes; it's about giving you the edge you need to get that
             <p class="text-indigo-100 mb-6 max-w-2xl mx-auto">
                 For a more personalised approach, enquire about one-on-one tutoring sessions tailored exactly to your learning style.
             </p>
-            <!-- Tertiary button style (inverted colors) -->
             <a href="tutoring.html" class="tutoring-button inline-block bg-white text-indigo-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition duration-300 transform hover:scale-105">
                 Enquire About Tutoring
             </a>
         </section>
     </div>
 
-   <!-- HIGH-IMPACT SLIDE-IN LEAD MAGNET -->
+    <!-- HIGH-IMPACT SLIDE-IN LEAD MAGNET -->
     <div id="slide-in-cta" class="fixed bottom-4 right-4 z-50 p-6 max-w-sm w-full bg-red-700 text-white rounded-xl shadow-2xl">
         <button id="dismiss-cta" aria-label="Dismiss" class="absolute top-2 right-2 text-red-300 hover:text-white transition">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -193,15 +208,15 @@ This isn't just about notes; it's about giving you the edge you need to get that
     <!-- Gumroad Widget Script -->
     <script src="https://gumroad.com/js/gumroad.js"></script>
 
-  <!-- New JavaScript Block for Event Tracking and Slide-In Logic -->
-    <script>
+    <!-- New JavaScript Block for Event Tracking and Slide-In Logic -->
+    <script>
         // --- System Variables ---
-        const CTA_DELAY_MS = 3000; // 3 second delay for the slide-in box to appear
-        const CTA_KEY = 'politics_cta_dismissed'; // Local storage key to prevent showing repeatedly
+        const CTA_DELAY_MS = 8000; // FIXED: Changed from 3000ms to 8000ms (8 seconds)
+        const CTA_KEY = 'politics_cta_dismissed';
 
-        // --- Element References ---
-        const tutoringButtons = document.querySelectorAll('.tutoring-button');
-        const gumroadLinks = document.querySelectorAll('.gumroad-button');
+        // --- Element References ---
+        const tutoringButtons = document.querySelectorAll('.tutoring-button');
+        const gumroadLinks = document.querySelectorAll('.gumroad-button');
         const leadMagnetButtons = document.querySelectorAll('.lead-magnet-button');
         const slideInCta = document.getElementById('slide-in-cta');
         const dismissCta = document.getElementById('dismiss-cta');
@@ -209,58 +224,67 @@ This isn't just about notes; it's about giving you the edge you need to get that
         // --- Slide-In Logic ---
 
         const showSlideInCta = () => {
-            // Only show if the user hasn't dismissed it in this session
             if (localStorage.getItem(CTA_KEY) !== 'true') {
                 setTimeout(() => {
-                    // This is where the slide-in class is added, triggering the CSS transition
                     slideInCta.classList.add('slide-in-active');
                     console.log('Slide-in CTA shown after delay.');
                 }, CTA_DELAY_MS);
             }
         };
 
-        const dismissSlideInCta = () => {
-            // This is where the slide-in class is removed, triggering the slide-out via CSS transition
+        // FIXED: Proper dismiss function that actually hides the popup
+        const dismissSlideInCta = (e) => {
+            e.preventDefault(); // Prevent any default button behavior
+            e.stopPropagation(); // Stop event from bubbling up
+            
+            // Add slide-out class to trigger exit animation
+            slideInCta.classList.add('slide-out');
             slideInCta.classList.remove('slide-in-active');
-            localStorage.setItem(CTA_KEY, 'true'); // Set flag to prevent showing again
+            
+            // Store dismissal in localStorage
+            localStorage.setItem(CTA_KEY, 'true');
+            
+            // Track dismissal in analytics
             gtag('event', 'lead_magnet_dismiss', {
-                'event_category': 'Call_to_Action',
-                'event_label': 'Slide-In CTA Dismissed'
-            });
+                'event_category': 'Call_to_Action',
+                'event_label': 'Slide-In CTA Dismissed'
+            });
+            
             console.log('Slide-in CTA dismissed and tracking sent.');
         };
 
-        // This line makes the 'X' button work by attaching the dismiss function
-        dismissCta.addEventListener('click', dismissSlideInCta);
+        // FIXED: Attach event listener properly
+        if (dismissCta) {
+            dismissCta.addEventListener('click', dismissSlideInCta);
+        }
 
         // Show the CTA on page load after the delay
         showSlideInCta();
 
+        // --- Analytics Tracking ---
 
-        // --- Analytics Tracking ---
+        // 1. Track the tutoring buttons
+        tutoringButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                gtag('event', 'tutoring_inquiry_click', {
+                    'event_category': 'Call_to_Action',
+                    'event_label': 'Enquire about tutoring'
+                });
+                console.log('Event sent: tutoring_inquiry_click');
+            });
+        });
 
-        // 1. Track the tutoring buttons
-        tutoringButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                gtag('event', 'tutoring_inquiry_click', {
-                    'event_category': 'Call_to_Action',
-                    'event_label': 'Enquire about tutoring'
-                });
-                console.log('Event sent: tutoring_inquiry_click');
-            });
-        });
-
-        // 2. Track the Gumroad links
-        gumroadLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                const productTitle = link.querySelector('h3').innerText;
-                gtag('event', 'product_link_click', {
-                    'event_category': 'Product_Link',
-                    'event_label': productTitle
-                });
-                console.log(`Event sent: product_link_click - ${productTitle}`);
-            });
-        });
+        // 2. Track the Gumroad links
+        gumroadLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                const productTitle = link.querySelector('h3').innerText;
+                gtag('event', 'product_link_click', {
+                    'event_category': 'Product_Link',
+                    'event_label': productTitle
+                });
+                console.log(`Event sent: product_link_click - ${productTitle}`);
+            });
+        });
         
         // 3. Track the NEW Slide-In CTA button clicks
         leadMagnetButtons.forEach(button => {
@@ -272,28 +296,26 @@ This isn't just about notes; it's about giving you the edge you need to get that
                 console.log('Event sent: lead_magnet_slide_in_click');
             });
         });
-        
-        // 4. Track scroll depth
-        let hasScrolledToBottom = false;
-        const scrollHandler = () => {
-            const scrollPosition = window.scrollY + window.innerHeight;
-            const totalHeight = document.body.offsetHeight;
+        
+        // 4. Track scroll depth
+        let hasScrolledToBottom = false;
+        const scrollHandler = () => {
+            const scrollPosition = window.scrollY + window.innerHeight;
+            const totalHeight = document.body.offsetHeight;
 
-            // Trigger the event when the user is 90% of the way down the page
-            if (scrollPosition >= totalHeight * 0.9 && !hasScrolledToBottom) {
-                gtag('event', 'scroll_depth_90', {
-                    'event_category': 'Engagement',
-                    'event_label': 'Scrolled to 90% of page'
-                });
-                hasScrolledToBottom = true;
-                console.log('Event sent: scroll_depth_90');
-                window.removeEventListener('scroll', scrollHandler);
-            }
-        };
+            if (scrollPosition >= totalHeight * 0.9 && !hasScrolledToBottom) {
+                gtag('event', 'scroll_depth_90', {
+                    'event_category': 'Engagement',
+                    'event_label': 'Scrolled to 90% of page'
+                });
+                hasScrolledToBottom = true;
+                console.log('Event sent: scroll_depth_90');
+                window.removeEventListener('scroll', scrollHandler);
+            }
+        };
 
-        window.addEventListener('scroll', scrollHandler);
-    </script>
-
+        window.addEventListener('scroll', scrollHandler);
+    </script>
 
 </body>
 </html>
