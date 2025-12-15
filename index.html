@@ -20,32 +20,41 @@
             font-family: 'Inter', sans-serif;
         }
         
-        /* FIXED: Added CSS for slide-in animation */
+        /* Slide-in animation */
         #slide-in-cta {
-            transform: translateX(120%);
-            transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            transform: translateX(150%);
+            transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         }
         
         #slide-in-cta.slide-in-active {
             transform: translateX(0);
         }
-        
-        /* FIXED: Add styles for when dismissed */
-        #slide-in-cta.slide-out {
-            transform: translateX(120%);
-        }
     </style>
 </head>
 <body class="bg-gray-100">
   
-    <!-- Tutoring Call to Action (Top Widget) - Fixed position -->
-    <div class="fixed top-8 right-8 z-50">
+    <!-- Support Bar -->
+    <div class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 px-4 text-center shadow-lg">
+        <p class="text-sm sm:text-base">
+            Need help? Email us at 
+            <a href="mailto:support@thepoliticsblueprint.store" class="text-yellow-300 font-semibold hover:text-white transition-colors underline">
+                support@thepoliticsblueprint.store
+            </a>
+            or 
+            <a href="tutoring.html" class="text-yellow-300 font-semibold hover:text-white transition-colors underline">
+                book a strategy call
+            </a>
+        </p>
+    </div>
+
+    <!-- Tutoring Call to Action (Top Widget) -->
+    <div class="fixed top-20 right-8 z-40">
         <a href="tutoring.html" class="tutoring-button inline-block bg-white text-indigo-600 font-bold py-3 px-6 rounded-full border-2 border-indigo-600 shadow-lg hover:bg-gray-50 transition duration-300 transform hover:scale-105">
             Enquire About Tutoring
         </a>
     </div>
   
-    <div class="container mx-auto px-4 py-8">
+    <div class="container mx-auto px-4 py-8 mt-16">
         <!-- Header Section -->
         <header class="text-center mb-12">
             <!-- SVG Logo -->
@@ -55,58 +64,210 @@
                 <path d="M17.792 18.257l2.454 1.258-1.527-2.784 2.454-1.258-2.721-.295-1.527-2.784-1.527 2.784-2.72.295 2.454 1.258-1.527 2.784 2.454-1.258z" fill="currentColor" stroke="currentColor" stroke-width="0" />
             </svg>
             <h1 class="text-5xl font-bold text-gray-800">The A* Politics Blueprint</h1>
-            <p class="text-xl text-gray-500 mt-4">Unlock the blueprint for political success.</p>
+            <p class="text-xl text-gray-500 mt-4">Everything you need to get an A* in US Politics.</p>
         </header>
         
         <!-- Navigation Bar -->
         <nav class="flex justify-center items-center gap-6 mb-12 text-lg font-medium text-gray-600">
-            <a href="index.html" class="hover:text-indigo-600 transition-colors duration-300 px-4 py-2 rounded-lg">Home</a>
+            <a href="index.html" class="hover:text-indigo-600 transition-colors duration-300 px-4 py-2 rounded-lg bg-indigo-100 text-indigo-600">Home</a>
             <a href="free-resource.html" class="hover:text-indigo-600 transition-colors duration-300 px-4 py-2 rounded-lg">Free Resources</a>
             <a href="tutoring.html" class="hover:text-indigo-600 transition-colors duration-300 px-4 py-2 rounded-lg">Tutoring</a>
         </nav>
-        
+
+        <!-- HERO BUNDLE SECTION -->
+        <section class="bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 rounded-2xl shadow-2xl p-8 mb-12 text-white relative overflow-hidden">
+            <!-- Decorative elements -->
+            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full -mr-32 -mt-32"></div>
+            <div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-5 rounded-full -ml-24 -mb-24"></div>
+            
+            <div class="relative z-10 max-w-4xl mx-auto">
+                <!-- Badge -->
+                <div class="inline-block bg-yellow-400 text-gray-900 font-bold px-4 py-2 rounded-full text-sm mb-4 shadow-lg">
+                    🔥 MOST POPULAR - Save £20
+                </div>
+                
+                <!-- Headline -->
+                <h2 class="text-4xl sm:text-5xl font-extrabold mb-4 leading-tight">
+                    Get Every US Politics Topic Covered
+                </h2>
+                
+                <!-- Subheadline -->
+                <p class="text-xl sm:text-2xl mb-6 text-indigo-100">
+                    All 8 revision guides in one complete bundle. Pre-built essay structures, evaluation frameworks, and high-impact evidence for every topic.
+                </p>
+                
+                <!-- Value Proposition Points -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                    <div class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-yellow-300 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <p class="font-bold">Pre-Built Essay Structures</p>
+                            <p class="text-sm text-indigo-100">Copy, adapt, and use in your exams</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-yellow-300 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <p class="font-bold">High-Impact Evidence</p>
+                            <p class="text-sm text-indigo-100">Dates, cases, vote counts examiners reward</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-yellow-300 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <p class="font-bold">Evaluation Frameworks</p>
+                            <p class="text-sm text-indigo-100">Turn description into A* analysis</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-yellow-300 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <p class="font-bold">Used by 600+ Students</p>
+                            <p class="text-sm text-indigo-100">Many now at Oxford, LSE, Durham</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pricing -->
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-6 mb-6 border border-white border-opacity-30">
+                    <div class="flex items-center justify-between flex-wrap gap-4">
+                        <div>
+                            <p class="text-indigo-200 text-sm line-through mb-1">Regular Price: £80</p>
+                            <p class="text-5xl font-extrabold">£60</p>
+                            <p class="text-indigo-100 text-sm mt-1">Save £20 • Just £7.50 per guide</p>
+                        </div>
+                        <div class="text-center sm:text-right">
+                            <p class="text-yellow-300 font-bold text-lg mb-2">🔥 Launch Offer</p>
+                            <p class="text-sm text-indigo-100">First 50 students only</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
+                    <a href="https://blueprintpolitics.gumroad.com/l/retvei" class="gumroad-button inline-block bg-yellow-400 text-gray-900 font-extrabold py-4 px-8 rounded-full text-lg shadow-xl hover:bg-yellow-300 transition duration-300 transform hover:scale-105">
+                        Get Complete Bundle Now →
+                    </a>
+                    <a href="#individual-guides" class="inline-block text-white font-semibold py-4 px-8 rounded-full text-lg border-2 border-white hover:bg-white hover:text-indigo-600 transition duration-300">
+                        Or Buy Individual Guides
+                    </a>
+                </div>
+                
+          
+            </div>
+        </section>
+
         <!-- About Me Section -->
         <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
             <h2 class="text-2xl font-semibold text-gray-800 text-center mb-4">
                 My Story: From Student to Creator
             </h2>
             <p class="text-gray-600 leading-relaxed text-center mb-6">
-As a student at LSE, I've been in your exact position. I remember the frustration of sifting through the internet feeling like I was just wasting time. It wasn't until I took control of my revision, meticulously hand-picking the most likely exam topics and high-quality evidence, that I was able to achieve an A* in Politics.
-
-I've distilled hours and hours of watching videos, reading politics reviews and skimming textbooks into a powerful set of revision guides. 
-
-This isn't just about notes; it's about giving you the edge you need to get that A*.
+                As a student at LSE, I've been in your exact position. I remember the frustration of sifting through the internet feeling like I was just wasting time. It wasn't until I took control of my revision, meticulously hand-picking the most likely exam topics and high-quality evidence, that I was able to achieve an A* in Politics.
             </p>
             <p class="text-gray-600 leading-relaxed text-center mb-6">
-                These notes are concise but are enough to achieve a high-level A* grade in the exam. They should be used alongside your lessons to understand the topics. Once you're finished, try to "blurt" out as much as you can remember. Then, when you feel confident, try to implement these points and evidence into as many essay plans as you can. Keep testing yourself to make sure you remember everything.
+                I've distilled hours and hours of watching videos, reading politics reviews and skimming textbooks into a powerful set of revision guides. This isn't just about notes; it's about giving you the edge you need to get that A*.
             </p>
         </section>
-        
-        <!-- US Politics Guides Section -->
+
+        <!-- Why Bundle Section -->
         <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">
-                US Politics Revision Guides
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-4">
+                Why Get the Complete Bundle?
             </h2>
+            <p class="text-gray-600 text-center mb-8 max-w-2xl mx-auto">
+                Most students struggle with 3-4 topics, not just one. The bundle gives you everything you need—and saves you £20.
+            </p>
+            
+            <!-- Comparison Table -->
+            <div class="overflow-x-auto">
+                <table class="w-full border-collapse max-w-4xl mx-auto">
+                    <thead>
+                        <tr class="border-b-2 border-gray-300">
+                            <th class="text-left p-4 font-bold text-gray-800">What You Get</th>
+                            <th class="text-center p-4 font-bold text-gray-800">Single Guide<br><span class="text-sm font-normal text-gray-500">£8 each</span></th>
+                            <th class="text-center p-4 font-bold text-white bg-gradient-to-r from-indigo-600 to-purple-600 rounded-t-lg">Complete Bundle<br><span class="text-sm font-normal text-indigo-100">£34.99 total</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-200">
+                            <td class="p-4 text-gray-700">Number of topics covered</td>
+                            <td class="text-center p-4">1 topic</td>
+                            <td class="text-center p-4 bg-indigo-50 font-bold text-indigo-600">All 7 topics ✓</td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="p-4 text-gray-700">Pre-built essay structures</td>
+                            <td class="text-center p-4">✓</td>
+                            <td class="text-center p-4 bg-indigo-50 font-bold text-indigo-600">✓</td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="p-4 text-gray-700">Evaluation frameworks</td>
+                            <td class="text-center p-4">✓</td>
+                            <td class="text-center p-4 bg-indigo-50 font-bold text-indigo-600">✓</td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="p-4 text-gray-700">High-impact evidence</td>
+                            <td class="text-center p-4">✓</td>
+                            <td class="text-center p-4 bg-indigo-50 font-bold text-indigo-600">✓</td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="p-4 text-gray-700">Free sample guide</td>
+                            <td class="text-center p-4">—</td>
+                            <td class="text-center p-4 bg-indigo-50 font-bold text-indigo-600">✓</td>
+                        </tr>
+                        <tr class="border-b-2 border-gray-300">
+                            <td class="p-4 text-gray-700 font-bold">Total Price (for all topics)</td>
+                            <td class="text-center p-4 font-bold text-gray-500">£56</td>
+                            <td class="text-center p-4 bg-indigo-50 font-bold text-2xl text-indigo-600">£36</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 text-gray-700 font-bold">You Save</td>
+                            <td class="text-center p-4">—</td>
+                            <td class="text-center p-4 bg-gradient-to-r from-green-50 to-green-100 font-bold text-2xl text-green-700 rounded-b-lg">£20</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center mt-8">
+                <a href="https://blueprintpolitics.gumroad.com/l/retvei" class="gumroad-button inline-block bg-indigo-600 text-white font-bold py-4 px-8 rounded-full shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105">
+                    Get the Complete Bundle for £36 →
+                </a>
+            </div>
+        </section>
+        
+        <!-- Individual Guides Section -->
+        <section id="individual-guides" class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-4">
+                Or Buy Individual Guides
+            </h2>
+            <p class="text-gray-600 text-center mb-8">
+                Prefer to start with one topic? Each guide is £8. (But you save £20 with the bundle!)
+            </p>
+            
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
 
-                <!-- Sample Notes Card -->
+                <!-- Free Sample Card -->
                 <a href="https://blueprintpolitics.gumroad.com/l/rjzkm" class="gumroad-button block">
-                    <div class="bg-gray-50 rounded-lg p-6 text-center shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-105">
-                        <div class="bg-indigo-500 w-30 h-30 mx-auto rounded-lg flex items-center justify-center mb-4 p-4">
-                            <span class="text-white text-xl font-bold">Free Sample</span>
+                    <div class="bg-gray-50 rounded-lg p-6 text-center shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-105 border-2 border-green-500">
+                        <div class="bg-green-500 w-30 h-30 mx-auto rounded-lg flex items-center justify-center mb-4 p-4">
+                            <span class="text-white text-xl font-bold">FREE Sample</span>
                         </div>
                         <h3 class="text-lg font-bold text-gray-800">Sample US Politics Guide</h3>
                         <p class="text-sm text-gray-500 mt-2">Small excerpt from 1/6th of the US Congress Revision Guide</p>
-                    </div>
-                </a>
-
-                <!-- Interest Groups Card -->
-                <a href="https://blueprintpolitics.gumroad.com/l/ozfurb" class="gumroad-button block">
-                    <div class="bg-gray-50 rounded-lg p-6 text-center shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-105">
-                        <div class="bg-indigo-500 w-30 h-30 mx-auto rounded-lg flex items-center justify-center mb-4 p-4">
-                            <span class="text-white text-xl font-bold">Interest Groups</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-800">US Politics: Interest Groups</h3>
+                        <p class="text-green-600 font-bold mt-2">FREE</p>
                     </div>
                 </a>
 
@@ -117,26 +278,32 @@ This isn't just about notes; it's about giving you the edge you need to get that
                             <span class="text-white text-xl font-bold">Congress</span>
                         </div>
                         <h3 class="text-lg font-bold text-gray-800">US Politics: Congress</h3>
+                        <p class="text-sm text-gray-500 mt-2">Legislative process, representation, oversight</p>
+                        <p class="text-indigo-600 font-bold mt-2">£10</p>
                     </div>
                 </a>
 
-                <!-- The Judiciary Card -->
+                <!-- Judiciary Card -->
                 <a href="https://blueprintpolitics.gumroad.com/l/cisvaz" class="gumroad-button block">
                     <div class="bg-gray-50 rounded-lg p-6 text-center shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-105">
                         <div class="bg-indigo-500 w-30 h-30 mx-auto rounded-lg flex items-center justify-center mb-4 p-4">
                             <span class="text-white text-xl font-bold">Supreme Court</span>
                         </div>
                         <h3 class="text-lg font-bold text-gray-800">US Politics: The Judiciary</h3>
+                        <p class="text-sm text-gray-500 mt-2">Judicial review, appointments, key cases</p>
+                        <p class="text-indigo-600 font-bold mt-2">£8</p>
                     </div>
                 </a>
                 
-                <!-- The Presidency Card -->
+                <!-- Presidency Card -->
                 <a href="https://blueprintpolitics.gumroad.com/l/aurtlj" class="gumroad-button block">
                     <div class="bg-gray-50 rounded-lg p-6 text-center shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-105">
                         <div class="bg-indigo-500 w-30 h-30 mx-auto rounded-lg flex items-center justify-center mb-4 p-4">
                             <span class="text-white text-xl font-bold">President</span>
                         </div>
                         <h3 class="text-lg font-bold text-gray-800">US Politics: The Presidency</h3>
+                        <p class="text-sm text-gray-500 mt-2">Executive powers, imperial vs imperilled</p>
+                        <p class="text-indigo-600 font-bold mt-2">£8</p>
                     </div>
                 </a>
                 
@@ -147,16 +314,20 @@ This isn't just about notes; it's about giving you the edge you need to get that
                             <span class="text-white text-xl font-bold">Elections & Parties</span>
                         </div>
                         <h3 class="text-lg font-bold text-gray-800">US Politics: Parties & Elections</h3>
+                        <p class="text-sm text-gray-500 mt-2">Primaries, campaign finance, voting behavior</p>
+                        <p class="text-indigo-600 font-bold mt-2">£8</p>
                     </div>
                 </a>
                 
-                <!-- The Constitution Card -->
+                <!-- Constitution Card -->
                 <a href="https://blueprintpolitics.gumroad.com/l/erlap" class="gumroad-button block">
                     <div class="bg-gray-50 rounded-lg p-6 text-center shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-105">
                         <div class="bg-indigo-500 w-30 h-30 mx-auto rounded-lg flex items-center justify-center mb-4 p-4">
                             <span class="text-white text-xl font-bold">Constitution</span>
                         </div>
                         <h3 class="text-lg font-bold text-gray-800">US Politics: The Constitution</h3>
+                        <p class="text-sm text-gray-500 mt-2">Bill of Rights, amendments, founding principles</p>
+                        <p class="text-indigo-600 font-bold mt-2">£8</p>
                     </div>
                 </a>
 
@@ -167,14 +338,38 @@ This isn't just about notes; it's about giving you the edge you need to get that
                             <span class="text-white text-xl font-bold">Federalism</span>
                         </div>
                         <h3 class="text-lg font-bold text-gray-800">US Politics: Federalism</h3>
+                        <p class="text-sm text-gray-500 mt-2">State vs federal power, grants, evolution</p>
+                        <p class="text-indigo-600 font-bold mt-2">£8</p>
+                    </div>
+                </a>
+
+                <!-- Interest Groups Card -->
+                <a href="https://blueprintpolitics.gumroad.com/l/ozfurb" class="gumroad-button block">
+                    <div class="bg-gray-50 rounded-lg p-6 text-center shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-105">
+                        <div class="bg-indigo-500 w-30 h-30 mx-auto rounded-lg flex items-center justify-center mb-4 p-4">
+                            <span class="text-white text-xl font-bold">Interest Groups</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-800">US Politics: Interest Groups</h3>
+                        <p class="text-sm text-gray-500 mt-2">Lobbying, PACs, iron triangles, influence</p>
+                        <p class="text-indigo-600 font-bold mt-2">£8</p>
                     </div>
                 </a>
 
             </div>
+
+            <!-- Reminder CTA -->
+            <div class="mt-8 p-6 bg-indigo-50 rounded-lg border-2 border-indigo-200 text-center">
+                <p class="text-gray-700 mb-4">
+                    💡 <strong>Smart students save £20:</strong> Get all 7 guides in the complete bundle instead of buying individually.
+                </p>
+                <a href="https://blueprintpolitics.gumroad.com/l/completebundle" class="gumroad-button inline-block bg-indigo-600 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-indigo-700 transition duration-300">
+                    Get the Bundle for £36
+                </a>
+            </div>
         </section>
       
-        <!-- Tutoring Call to Action (Bottom Section) -->
-        <section class="bg-indigo-600 rounded-xl shadow-2xl p-8 text-center text-white transition transform hover:scale-[1.01]">
+        <!-- Tutoring Call to Action -->
+        <section class="bg-indigo-600 rounded-xl shadow-2xl p-8 text-center text-white transition transform hover:scale-[1.01] mb-12">
             <h2 class="text-3xl font-extrabold mb-4">
                 Need Personalised A* Guidance?
             </h2>
@@ -187,7 +382,7 @@ This isn't just about notes; it's about giving you the edge you need to get that
         </section>
     </div>
 
-    <!-- HIGH-IMPACT SLIDE-IN LEAD MAGNET -->
+    <!-- Slide-in Lead Magnet -->
     <div id="slide-in-cta" class="fixed bottom-4 right-4 z-50 p-6 max-w-sm w-full bg-red-700 text-white rounded-xl shadow-2xl">
         <button id="dismiss-cta" aria-label="Dismiss" class="absolute top-2 right-2 text-red-300 hover:text-white transition cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -201,26 +396,29 @@ This isn't just about notes; it's about giving you the edge you need to get that
             </p>
         </div>
         <p class="text-sm text-red-100 mb-4">
-            Download your FREE, instant Politics Evaluation Strategy to pinpoint your weakest areas and prioritize revision like an A* student.
+            Download your FREE Politics Evaluation Strategy to pinpoint your weakest areas and prioritize revision like an A* student.
         </p>
         <a href="https://blueprintpolitics.gumroad.com/l/xncoa" class="lead-magnet-button w-full inline-block text-center bg-yellow-300 text-red-800 font-extrabold py-3 px-4 rounded-lg shadow-xl hover:bg-yellow-400 transition duration-300 transform hover:scale-[1.02]">
             Get Your FREE Strategy Guide Now
         </a>
     </div>
 
+    <!-- Gumroad Widget Script -->
+    <script src="https://gumroad.com/js/gumroad.js"></script>
+
     <script>
-        // --- System Variables ---
-        const CTA_DELAY_MS = 3000; // 3 second delay for the slide-in box to appear
+        // System Variables
+        const CTA_DELAY_MS = 8000;
         const CTA_KEY = 'politics_cta_dismissed';
 
-        // --- Element References ---
+        // Element References
         const tutoringButtons = document.querySelectorAll('.tutoring-button');
         const gumroadLinks = document.querySelectorAll('.gumroad-button');
         const leadMagnetButtons = document.querySelectorAll('.lead-magnet-button');
         const slideInCta = document.getElementById('slide-in-cta');
         const dismissCta = document.getElementById('dismiss-cta');
 
-        // --- Slide-In Logic ---
+        // Slide-In Logic
         const showSlideInCta = () => {
             if (localStorage.getItem(CTA_KEY) !== 'true') {
                 setTimeout(() => {
@@ -237,7 +435,6 @@ This isn't just about notes; it's about giving you the edge you need to get that
             e.stopPropagation();
             
             if (slideInCta) {
-                slideInCta.classList.add('slide-out');
                 slideInCta.classList.remove('slide-in-active');
                 localStorage.setItem(CTA_KEY, 'true');
                 
@@ -254,28 +451,22 @@ This isn't just about notes; it's about giving you the edge you need to get that
         }
 
         showSlideInCta();
-           // --- Analytics Tracking ---
-        // Add hover effects
 
-        document.querySelectorAll('.gumroad-button, .tutoring-button').forEach(button => {
-        // 1. Track the tutoring buttons
-            button.addEventListener('click', (e) => {
+        // Analytics Tracking
         tutoringButtons.forEach(button => {
-                e.preventDefault();
             button.addEventListener('click', () => {
-                console.log('Button clicked:', button.textContent.trim());
                 gtag('event', 'tutoring_inquiry_click', {
                     'event_category': 'Call_to_Action',
                     'event_label': 'Enquire about tutoring'
                 });
                 console.log('Event sent: tutoring_inquiry_click');
-             });
-             });
+            });
+        });
 
-        // 2. Track the Gumroad links
         gumroadLinks.forEach(link => {
             link.addEventListener('click', () => {
-                const productTitle = link.querySelector('h3').innerText;
+                const productCard = link.querySelector('h3');
+                const productTitle = productCard ? productCard.innerText : 'Unknown Product';
                 gtag('event', 'product_link_click', {
                     'event_category': 'Product_Link',
                     'event_label': productTitle
@@ -284,7 +475,6 @@ This isn't just about notes; it's about giving you the edge you need to get that
             });
         });
 
-        // 3. Track the NEW Slide-In CTA button clicks
         leadMagnetButtons.forEach(button => {
             button.addEventListener('click', () => {
                 gtag('event', 'lead_magnet_slide_in_click', {
@@ -295,7 +485,7 @@ This isn't just about notes; it's about giving you the edge you need to get that
             });
         });
 
-        // 4. Track scroll depth
+        // Track scroll depth
         let hasScrolledToBottom = false;
         const scrollHandler = () => {
             const scrollPosition = window.scrollY + window.innerHeight;
