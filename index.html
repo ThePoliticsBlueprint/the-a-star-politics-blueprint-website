@@ -209,18 +209,25 @@ This isn't just about notes; it's about giving you the edge you need to get that
     </div>
 
     <script>
-        // Reduced delay to 3 seconds for demo purposes (you have 8 seconds in production)
-        const CTA_DELAY_MS = 3000;
-        const CTA_KEY = 'politics_cta_dismissed_preview';
+        // --- System Variables ---
+        const CTA_DELAY_MS = 3000; // 3 second delay for the slide-in box to appear
+        const CTA_KEY = 'politics_cta_dismissed';
 
+        // --- Element References ---
+        const tutoringButtons = document.querySelectorAll('.tutoring-button');
+        const gumroadLinks = document.querySelectorAll('.gumroad-button');
+        const leadMagnetButtons = document.querySelectorAll('.lead-magnet-button');
         const slideInCta = document.getElementById('slide-in-cta');
         const dismissCta = document.getElementById('dismiss-cta');
 
+        // --- Slide-In Logic ---
         const showSlideInCta = () => {
-            if (sessionStorage.getItem(CTA_KEY) !== 'true') {
+            if (localStorage.getItem(CTA_KEY) !== 'true') {
                 setTimeout(() => {
-                    slideInCta.classList.add('slide-in-active');
-                    console.log('Slide-in CTA shown!');
+                    if (slideInCta) {
+                        slideInCta.classList.add('slide-in-active');
+                        console.log('Slide-in CTA shown after delay.');
+                    }
                 }, CTA_DELAY_MS);
             }
         };
@@ -229,12 +236,17 @@ This isn't just about notes; it's about giving you the edge you need to get that
             e.preventDefault();
             e.stopPropagation();
             
-            slideInCta.classList.add('slide-out');
-            slideInCta.classList.remove('slide-in-active');
-            
-            sessionStorage.setItem(CTA_KEY, 'true');
-            
-            console.log('Slide-in CTA dismissed!');
+            if (slideInCta) {
+                slideInCta.classList.add('slide-out');
+                slideInCta.classList.remove('slide-in-active');
+                localStorage.setItem(CTA_KEY, 'true');
+                
+                gtag('event', 'lead_magnet_dismiss', {
+                    'event_category': 'Call_to_Action',
+                    'event_label': 'Slide-In CTA Dismissed'
+                });
+                console.log('Slide-in CTA dismissed and tracking sent.');
+            }
         };
 
         if (dismissCta) {
@@ -242,12 +254,6 @@ This isn't just about notes; it's about giving you the edge you need to get that
         }
 
         showSlideInCta();
-
-        // Add hover effects
-        document.querySelectorAll('.gumroad-button, .tutoring-button').forEach(button => {
-            button.addEventListener('click', (e) => {
-                e.preventDefault();
-                console.log('Button clicked:', button.textContent.trim());
            // --- Analytics Tracking ---
         // Add hover effects
 
