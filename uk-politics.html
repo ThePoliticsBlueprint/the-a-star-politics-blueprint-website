@@ -1,1 +1,522 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WN81B5CMGH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-WN81B5CMGH');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Politics Flashcards - The Politics Blueprint</title>
+    <meta name="description" content="Master UK Politics with digital flashcards. 120+ cards covering all topics. Anki & CSV formats included.">
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* Card flip animation */
+        .flip-card {
+            perspective: 1000px;
+            width: 100%;
+            height: 200px;
+        }
+        
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .flip-card-front {
+            background-color: #e0e7ff;
+            color: #4338ca;
+        }
+        
+        .flip-card-back {
+            background-color: #4338ca;
+            color: white;
+            transform: rotateY(180deg);
+        }
+        
+        /* Pulse animation for new badge */
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.05); }
+        }
+        .pulse { animation: pulse 2s ease-in-out infinite; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    
+    <!-- Announcement Bar -->
+    <div class="bg-emerald-600 text-white py-2 px-4 text-center text-sm font-bold pulse">
+        🎉 NEW: UK Politics Flashcards Now Available - January 2026 Launch Special!
+    </div>
+    
+    <!-- Main Navigation -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Primary Nav -->
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <svg class="w-10 h-10 text-indigo-600 group-hover:text-indigo-700 transition" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M4 2.5a.5.5 0 01.5-.5h15a.5.5 0 01.5.5v19a.5.5 0 01-.5.5h-15a.5.5 0 01-.5-.5v-19z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                        <path d="M7 6h10M7 10h10M7 14h6M7 18h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M17.792 18.257l2.454 1.258-1.527-2.784 2.454-1.258-2.721-.295-1.527-2.784-1.527 2.784-2.72.295 2.454 1.258-1.527 2.784 2.454-1.258z" fill="currentColor" stroke="currentColor" stroke-width="0" />
+                    </svg>
+                    <span class="text-xl font-bold text-gray-900 group-hover:text-indigo-600 transition hidden sm:block">The A* Politics Blueprint</span>
+                </a>
+                
+                <!-- Main Nav Links -->
+                <div class="flex items-center gap-1">
+                    <a href="index.html" class="px-5 py-2.5 text-base text-gray-700 font-semibold hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition">
+                        Home
+                    </a>
+                    <a href="free-resource.html" class="px-5 py-2.5 text-base text-gray-700 font-semibold hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition">
+                        Free Resources
+                    </a>
+                    <a href="tutoring.html" class="px-5 py-2.5 text-base text-gray-700 font-semibold hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition">
+                        Tutoring
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Secondary Product Nav -->
+            <div class="flex items-center gap-2 pb-4 overflow-x-auto border-t border-gray-100 pt-3">
+                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider mr-2">Browse:</span>
+                <a href="us-politics.html" class="px-4 py-2 text-sm font-semibold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 rounded-full whitespace-nowrap transition">
+                    US Politics
+                </a>
+                <a href="essay-structure.html" class="px-4 py-2 text-sm font-semibold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 rounded-full whitespace-nowrap transition">
+                    Essay Structure
+                </a>
+                <a href="uk-politics-flashcards.html" class="px-4 py-2 text-sm font-semibold text-purple-700 bg-purple-50 hover:bg-purple-100 rounded-full whitespace-nowrap transition">
+                    UK Politics Flashcards
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-purple-50 via-white to-emerald-50 py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                    <span>🚀</span>
+                    <span>Finally launching after months of requests!</span>
+                </div>
+                
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
+                    Master UK Politics with<br/>
+                    <span class="gradient-text">Smart Digital Flashcards</span>
+                </h1>
+                
+                <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+                    120+ carefully crafted flashcards covering every UK Politics topic. 
+                    Compatible with Anki, Quizlet, and all major flashcard apps.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+                    <a href="#pricing" class="inline-block bg-purple-600 text-white font-bold py-4 px-8 rounded-lg hover:bg-purple-700 transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                        View Pricing & Topics
+                    </a>
+                    <a href="#demo" class="inline-block bg-white text-purple-600 font-bold py-4 px-8 rounded-lg border-2 border-purple-600 hover:bg-purple-50 transition">
+                        Try Demo Cards
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Demo Section -->
+    <section id="demo" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                    Try Before You Buy
+                </h2>
+                <p class="text-lg text-gray-600">
+                    Hover over the cards below to see the answer (tap on mobile)
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Demo Card 1 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div>
+                                <p class="text-lg font-semibold">What is parliamentary sovereignty?</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div>
+                                <p class="text-sm">The principle that Parliament has supreme legal authority in the UK and can create or abolish any law. No other body can overrule its legislation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Demo Card 2 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div>
+                                <p class="text-lg font-semibold">What is First Past the Post (FPTP)?</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div>
+                                <p class="text-sm">Electoral system where the candidate with the most votes wins, regardless of whether they have a majority. Used for UK general elections.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Demo Card 3 -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div>
+                                <p class="text-lg font-semibold">What is collective ministerial responsibility?</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div>
+                                <p class="text-sm">Cabinet ministers must publicly support all government decisions or resign. Ensures government unity and maintains confidence.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Why These Flashcards Work</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-8 shadow-md">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Exam-Board Aligned</h3>
+                    <p class="text-gray-600">Every card matches AQA, Edexcel, and OCR specifications. No wasted time on irrelevant content.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-8 shadow-md">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Universal Format</h3>
+                    <p class="text-gray-600">Works with Anki, Quizlet, and any flashcard app. Includes .apkg and .csv files.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-8 shadow-md">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Active Recall</h3>
+                    <p class="text-gray-600">Designed for spaced repetition. Review cards at optimal intervals for long-term retention.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Simple, Student-Friendly Pricing</h2>
+                <p class="text-xl text-gray-600">Choose what works for your revision needs</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Government Bundle -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 border-2 border-gray-200 hover:border-purple-300 transition">
+                    <h3 class="text-2xl font-bold mb-2">UK Government</h3>
+                    <p class="text-gray-600 mb-4">Master the institutions</p>
+                    <div class="text-4xl font-bold text-purple-600 mb-6">£7.50</div>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-semibold text-gray-700 mb-3">54 flashcards covering:</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                Parliament (13 cards)
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                Executive (11 cards)
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                Judiciary (17 cards)
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                Constitution & Devolution (13 cards)
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <a href="#" class="gumroad-button block text-center bg-purple-600 text-white font-bold py-3 px-6 rounded-full hover:bg-purple-700 transition">
+                        Get Government Bundle
+                    </a>
+                </div>
+                
+                <!-- Politics Bundle -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 border-2 border-gray-200 hover:border-purple-300 transition">
+                    <h3 class="text-2xl font-bold mb-2">UK Politics</h3>
+                    <p class="text-gray-600 mb-4">Master democratic processes</p>
+                    <div class="text-4xl font-bold text-purple-600 mb-6">£7.50</div>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-semibold text-gray-700 mb-3">59 flashcards covering:</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                Elections & Referenda (20 cards)
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                Political Parties (20 cards)
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                Democracy & Participation (19 cards)
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <a href="#" class="gumroad-button block text-center bg-purple-600 text-white font-bold py-3 px-6 rounded-full hover:bg-purple-700 transition">
+                        Get Politics Bundle
+                    </a>
+                </div>
+                
+                <!-- Complete Bundle -->
+                <div class="bg-gradient-to-br from-purple-600 to-emerald-600 rounded-2xl shadow-2xl p-8 text-white relative overflow-hidden transform scale-105">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-gray-900 font-bold px-6 py-2 rounded-full text-sm">
+                        BEST VALUE
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold mb-2 mt-4">Complete UK Politics</h3>
+                    <p class="text-purple-100 mb-4">Everything you need</p>
+                    <div class="text-4xl font-bold mb-6">£12.50</div>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-semibold mb-3">All 113 flashcards:</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-yellow-300 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                Government Bundle (54 cards)
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-yellow-300 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                Politics Bundle (59 cards)
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-yellow-300 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                Save £2.50 vs bundles
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-yellow-300 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                Priority support included
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <a href="#" class="gumroad-button block text-center bg-white text-purple-600 font-bold py-3 px-6 rounded-full hover:bg-gray-100 transition transform hover:scale-105">
+                        Get Everything Now →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- How It Works Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">How It Works</h2>
+            
+            <div class="space-y-8">
+                <div class="flex items-start gap-4">
+                    <div class="bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">1</div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Purchase & Download</h3>
+                        <p class="text-gray-600">Get instant access to .apkg (Anki) and .csv files after purchase.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start gap-4">
+                    <div class="bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">2</div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Import to Your App</h3>
+                        <p class="text-gray-600">Works with Anki (free), Quizlet, Brainscape, or any CSV-compatible app.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start gap-4">
+                    <div class="bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">3</div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Study Smarter</h3>
+                        <p class="text-gray-600">Use spaced repetition to memorize key facts efficiently. Review on any device.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-purple-100 rounded-xl p-6 text-center">
+                <p class="text-purple-900 font-semibold">
+                    💡 Pro tip: Start with 10-15 cards per day for sustainable learning
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            
+            <div class="space-y-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-2">What format are the flashcards in?</h3>
+                    <p class="text-gray-600">You get both .apkg (Anki format) and .csv files. This means they work with virtually any flashcard app.</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Do I need to pay for flashcard apps?</h3>
+                    <p class="text-gray-600">No! Anki is completely free on desktop and Android. Quizlet has a free tier. You can also import the CSV into Google Sheets.</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Are these updated for 2026 exams?</h3>
+                    <p class="text-gray-600">Yes! All cards reflect the latest specifications and include recent political developments through 2025.</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Can I get individual topics?</h3>
+                    <p class="text-gray-600">Currently we only offer the Government and Politics bundles. Individual topics may be available in the future.</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Is there a money-back guarantee?</h3>
+                    <p class="text-gray-600">Yes! If you're not satisfied within 14 days, email us for a full refund.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Final CTA -->
+    <section class="py-16 bg-gradient-to-r from-purple-600 to-emerald-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4">Ready to Master UK Politics?</h2>
+            <p class="text-xl mb-8 text-purple-100">
+                Join hundreds of students using smart flashcards to ace their exams.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#" class="gumroad-button bg-white text-purple-600 font-bold py-4 px-8 rounded-full text-lg hover:bg-gray-100 transition transform hover:scale-105">
+                    Get Complete Set (£12.50) →
+                </a>
+                <a href="#pricing" class="text-white font-semibold py-4 px-8 rounded-full text-lg border-2 border-white hover:bg-white hover:text-purple-600 transition">
+                    View Bundle Options
+                </a>
+            </div>
+            <p class="mt-8 text-purple-200">
+                Questions? Email 
+                <a href="mailto:support@thepoliticsblueprint.store" class="text-white underline">
+                    support@thepoliticsblueprint.store
+                </a>
+            </p>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; 2026 The Politics Blueprint. Helping students achieve A*s.</p>
+            <div class="mt-4 space-x-6">
+                <a href="index.html" class="hover:text-white transition">Home</a>
+                <a href="us-politics.html" class="hover:text-white transition">US Politics</a>
+                <a href="essay-structure.html" class="hover:text-white transition">Essay Structure</a>
+                <a href="https://www.linkedin.com/in/the-politics-blueprint-a79b71383/" class="hover:text-white transition">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Gumroad Script -->
+    <script src="https://gumroad.com/js/gumroad.js"></script>
+    
+</body>
+</html>
