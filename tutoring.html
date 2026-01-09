@@ -1,49 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WN81B5CMGH"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-WN81B5CMGH');
     </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A* Politics Tutoring | One-on-One Expert Support</title>
+    <meta name="description" content="Get personalised Politics tutoring from A* students at LSE, Oxford, and Warwick. First session £15.">
     
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="manifest" href="site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
     <style>
-        body {
+        body { 
             font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
     </style>
 </head>
-<body class="bg-gray-100">
-
-    <!-- Support Bar -->
-    <div class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 px-4 text-center shadow-lg">
-        <p class="text-sm sm:text-base">
-            Need help? Email us at 
-            <a href="mailto:support@thepoliticsblueprint.store" class="text-yellow-300 font-semibold hover:text-white transition-colors underline">
+<body class="bg-white">
+    
+    <!-- Top Support Bar -->
+    <div class="bg-indigo-600 text-white py-2 px-4 text-center text-sm">
+        <p>
+            Need help? 
+            <a href="mailto:support@thepoliticsblueprint.store" class="underline hover:text-indigo-200">
                 support@thepoliticsblueprint.store
             </a>
         </p>
     </div>
-
-    <div class="container mx-auto px-4 py-8 mt-16 max-w-5xl">
-        
-
-      <!-- Main Navigation -->
+    
+    <!-- Announcement Bar -->
+    <div class="bg-gradient-to-r from-emerald-500 to-teal-500 text-white py-2 px-4 text-center text-sm font-medium">
+        <p>
+            🎓 First tutoring session just £15 | Refund available if not satisfied | 
+            <a href="https://www.linkedin.com/in/the-politics-blueprint-a79b71383/" class="underline hover:text-white font-semibold">
+                Follow on LinkedIn
+            </a>
+        </p>
+    </div>
+    
+    <!-- Main Navigation -->
     <nav class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-4">
             <!-- Primary Nav -->
@@ -60,19 +74,19 @@
                 
                 <!-- Main Nav Links -->
                 <div class="flex items-center gap-1">
-                    <a href="index.html" class="px-5 py-2.5 text-base text-gray-900 font-semibold rounded-lg bg-indigo-50 hover:bg-indigo-100 transition">
+                    <a href="index.html" class="px-5 py-2.5 text-base text-gray-700 font-semibold hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition">
                         Home
                     </a>
                     <a href="free-resource.html" class="px-5 py-2.5 text-base text-gray-700 font-semibold hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition">
                         Free Resources
                     </a>
-                    <a href="tutoring.html" class="px-5 py-2.5 text-base text-gray-700 font-semibold hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition">
+                    <a href="tutoring.html" class="px-5 py-2.5 text-base text-gray-900 font-semibold rounded-lg bg-indigo-50 hover:bg-indigo-100 transition">
                         Tutoring
                     </a>
                 </div>
             </div>
             
-            <!-- Secondary Product Nav - Aligned properly -->
+            <!-- Secondary Product Nav -->
             <div class="flex items-center gap-2 pb-4 overflow-x-auto border-t border-gray-100 pt-3">
                 <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider mr-2">Browse:</span>
                 <a href="us-politics.html" class="px-4 py-2 text-sm font-semibold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 rounded-full whitespace-nowrap transition">
@@ -81,347 +95,466 @@
                 <a href="essay-structure.html" class="px-4 py-2 text-sm font-semibold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 rounded-full whitespace-nowrap transition">
                     Essay Structure
                 </a>
-                <div class="px-4 py-2 text-sm font-semibold text-gray-400 bg-gray-50 rounded-full whitespace-nowrap cursor-not-allowed">
-                    UK Politics <span class="text-xs">(Jan 2026)</span>
-                </div>
+                <a href="uk-politics.html" class="px-4 py-2 text-sm font-semibold text-purple-700 bg-purple-50 hover:bg-purple-100 rounded-full whitespace-nowrap transition">
+                    UK Politics
+                </a>
             </div>
         </div>
     </nav>
-
-        <!-- Hero Section -->
-        <section class="bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl shadow-2xl p-8 sm:p-12 mb-12 text-white text-center">
-            <div class="inline-block bg-yellow-400 text-gray-900 font-bold px-4 py-2 rounded-full text-sm mb-4">
-                🎓 First Session: £15 - Refund Available
+    
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-gray-50 via-white to-indigo-50 py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-flex items-center gap-2 bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                    <span>🎓</span>
+                    <span>First Session: £15 - Satisfaction Guaranteed</span>
+                </div>
+                
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
+                    Get 1-on-1 Support from<br/>
+                    <span class="gradient-text">A* Politics Students</span>
+                </h1>
+                
+                <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+                    Our tutors achieved A*s in Politics and got offers from LSE, Oxford, and Warwick. They know exactly what examiners want - because they did it recently.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSetsU8KfBKqlJjzXRCzGq-UFCT-8MQKL2aKOGawyX2MKMqw-g/viewform?usp=header" class="tutoring-button inline-block bg-indigo-600 text-white font-bold py-4 px-8 rounded-lg hover:bg-indigo-700 transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                        Book Your First Session (£15) →
+                    </a>
+                    <p class="text-gray-600">
+                        Regular sessions from £26/hour
+                    </p>
+                </div>
+                
+                <!-- Trust Indicators -->
+                <div class="flex flex-wrap justify-center items-center gap-8 text-sm text-gray-600">
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="font-medium">All tutors achieved A*</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="font-medium">Studying at top universities</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="font-medium">Flexible online sessions</span>
+                    </div>
+                </div>
             </div>
-            <h2 class="text-4xl sm:text-5xl font-extrabold mb-4">
-                1-on-1 Tutoring with A* Students
-            </h2>
-            <p class="text-xl text-indigo-100 mb-8 max-w-2xl mx-auto">
-                Get personalised help from tutors who achieved A*s in Politics and got offers from LSE, Oxford, and Warwick. They know exactly what examiners want - because they did it recently.
-            </p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSetsU8KfBKqlJjzXRCzGq-UFCT-8MQKL2aKOGawyX2MKMqw-g/viewform?usp=header" class="tutoring-button inline-block bg-white text-indigo-600 font-extrabold py-4 px-10 rounded-full shadow-xl hover:bg-indigo-50 transition duration-300 transform hover:scale-105">
-                Book Your First Session (£15) →
-            </a>
-        </section>
-
-        <!-- Who Are Our Tutors Section -->
-        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">
-                Who Are Our Tutors?
-            </h2>
+        </div>
+    </section>
+    
+    <!-- Student Results Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Real Student Results
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Most students see improvement within a few sessions
+                </p>
+            </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                <!-- Feature 1 -->
-                <div class="text-center">
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Result 1 -->
+                <div class="bg-gradient-to-br from-red-50 to-green-50 rounded-xl p-8 border-2 border-gray-200 shadow-lg">
+                    <div class="flex items-center justify-center gap-8 mb-6">
+                        <div class="text-center">
+                            <div class="text-6xl font-black text-red-600 mb-2">B</div>
+                            <div class="text-sm text-gray-500 uppercase font-bold">Mock Result</div>
+                        </div>
+                        <div class="text-4xl text-gray-400">→</div>
+                        <div class="text-center">
+                            <div class="text-6xl font-black text-green-600 mb-2">A*</div>
+                            <div class="text-sm text-gray-500 uppercase font-bold">Final Grade</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic text-center mb-3">
+                        "The tutoring sessions helped me structure my essays properly. Went from B in mocks to A* in final exams."
+                    </p>
+                    <p class="text-gray-500 text-center font-medium">— Tanush</p>
+                </div>
+                
+                <!-- Result 2 -->
+                <div class="bg-gradient-to-br from-yellow-50 to-green-50 rounded-xl p-8 border-2 border-gray-200 shadow-lg">
+                    <div class="flex items-center justify-center gap-8 mb-6">
+                        <div class="text-center">
+                            <div class="text-6xl font-black text-yellow-600 mb-2">C</div>
+                            <div class="text-sm text-gray-500 uppercase font-bold">Before</div>
+                        </div>
+                        <div class="text-4xl text-gray-400">→</div>
+                        <div class="text-center">
+                            <div class="text-6xl font-black text-green-600 mb-2">A*</div>
+                            <div class="text-sm text-gray-500 uppercase font-bold">After</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic text-center mb-3">
+                        "My tutor showed me evaluation techniques and counter-arguments I'd never learned in class. Essay marks jumped immediately."
+                    </p>
+                    <p class="text-gray-500 text-center font-medium">— Toby</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Who Are Our Tutors Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Who Are Our Tutors?
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Recent A* achievers who understand current exam requirements
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white rounded-xl shadow-md p-8 text-center">
                     <div class="inline-block bg-green-100 text-green-600 rounded-full p-4 mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-lg text-gray-800 mb-2">All Got A*s in Politics</h3>
-                    <p class="text-gray-600 text-sm">
-                        Every tutor achieved an A* in A-Level Politics within the last few years. They understand the current syllabus and marking schemes inside out.
+                    <h3 class="font-bold text-xl text-gray-800 mb-3">All Got A*s in Politics</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Every tutor achieved an A* in A-Level Politics within the last few years. They understand current syllabuses and marking schemes.
                     </p>
                 </div>
-
-                <!-- Feature 2 -->
-                <div class="text-center">
+                
+                <div class="bg-white rounded-xl shadow-md p-8 text-center">
                     <div class="inline-block bg-blue-100 text-blue-600 rounded-full p-4 mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.488 9.222 5 7.5 5S4.168 5.488 3 6.253v13C4.168 18.488 5.778 18 7.5 18s3.332.488 4.5 1.253m0-13C13.168 5.488 14.778 5 16.5 5c1.722 0 3.332.488 4.5 1.253v13C19.832 18.488 18.222 18 16.5 18c-1.722 0-3.332.488-4.5 1.253"/>
                         </svg>
                     </div>
-                    <h3 class="font-bold text-lg text-gray-800 mb-2">Study at Top Universities</h3>
-                    <p class="text-gray-600 text-sm">
+                    <h3 class="font-bold text-xl text-gray-800 mb-3">Study at Top Universities</h3>
+                    <p class="text-gray-600 leading-relaxed">
                         All our tutors got offers for Politics, PPE, or International Relations at universities like LSE, Oxford, and Warwick.
                     </p>
                 </div>
-
-                <!-- Feature 3 -->
-                <div class="text-center">
+                
+                <div class="bg-white rounded-xl shadow-md p-8 text-center">
                     <div class="inline-block bg-purple-100 text-purple-600 rounded-full p-4 mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
                     </div>
-                    <h3 class="font-bold text-lg text-gray-800 mb-2">They Remember What Works</h3>
-                    <p class="text-gray-600 text-sm">
-                        Our tutors recently went through the same exams. They know which essay structures work, which evidence examiners reward, and how to beat the clock.
+                    <h3 class="font-bold text-xl text-gray-800 mb-3">They Remember What Works</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Our tutors recently went through the same exams. They know which essay structures work and how to beat the clock.
                     </p>
+               
                 </div>
             </div>
-
-            <p class="text-gray-600 text-center max-w-3xl mx-auto leading-relaxed">
+        </div>
+   <br>
+   <p class="text-gray-600 text-center max-w-3xl mx-auto leading-relaxed">
                 Unlike tutors who graduated years ago, our team understands the <strong>current A-Level curriculum</strong> and what's changed recently. They're not just experts in the subject, they know exactly how to get an A* in <strong>your</strong> exam.
             </p>
         </section>
-<!-- Student Results Section (NEW) -->
-        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">
-                Real Student Results
-            </h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <!-- Result 1 -->
-                <div class="bg-gradient-to-br from-red-50 to-green-50 rounded-xl p-6 border-2 border-gray-200">
-                    <div class="flex items-center justify-center gap-6 mb-4">
-                        <div class="text-center">
-                            <div class="text-5xl font-black text-red-600 mb-1">B</div>
-                            <div class="text-xs text-gray-500 uppercase font-bold">Mock Result</div>
-                        </div>
-                        <div class="text-4xl text-gray-400">→</div>
-                        <div class="text-center">
-                            <div class="text-5xl font-black text-green-600 mb-1">A*</div>
-                            <div class="text-xs text-gray-500 uppercase font-bold">Final Grade</div>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 text-sm italic text-center">
-                        "The tutoring sessions helped me structure my essays properly. Went from B in mocks to A* in final exams."
-                    </p>
-                    <p class="text-gray-500 text-xs text-center mt-3">— Tanush</p>
-                </div>
-
-                <!-- Result 2 -->
-                <div class="bg-gradient-to-br from-yellow-50 to-green-50 rounded-xl p-6 border-2 border-gray-200">
-                    <div class="flex items-center justify-center gap-6 mb-4">
-                        <div class="text-center">
-                            <div class="text-5xl font-black text-yellow-600 mb-1">C</div>
-                            <div class="text-xs text-gray-500 uppercase font-bold">Before</div>
-                        </div>
-                        <div class="text-4xl text-gray-400">→</div>
-                        <div class="text-center">
-                            <div class="text-5xl font-black text-green-600 mb-1">A*</div>
-                            <div class="text-xs text-gray-500 uppercase font-bold">After</div>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 text-sm italic text-center">
-                        "My tutor showed me evaluation techniques and counter-arguments I'd never learned in class. Essay marks jumped immediately."
-                    </p>
-                    <p class="text-gray-500 text-xs text-center mt-3">— Toby</p>
-                </div>
+    
+    <!-- How It Works Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    How Tutoring Works
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Get matched with the perfect tutor in 48 hours
+                </p>
             </div>
-
-            <p class="text-center text-gray-600 mt-8 text-sm">
-                💡 Most students see improvement within a few sessions
-            </p>
-        </section>
-        <!-- How It Works Section -->
-        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">
-                How Tutoring Works
-            </h2>
-
-            <div class="space-y-6 max-w-3xl mx-auto">
+            
+            <div class="space-y-8">
                 <!-- Step 1 -->
                 <div class="flex items-start gap-4">
-                    <div class="flex-shrink-0 w-10 h-10 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold">
+                    <div class="flex-shrink-0 w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
                         1
                     </div>
                     <div>
-                        <h3 class="font-bold text-lg text-gray-800 mb-1">Fill Out the Form</h3>
-                        <p class="text-gray-600">
-                            Tell us your current grade, target grade, and which topics you're struggling with most (Congress, Judiciary, Federalism, etc.).
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">Fill Out the Form</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Tell us your current grade, target grade, and which topics you're struggling with most (Legislative, Judiciary, Elections, etc.).
                         </p>
                     </div>
                 </div>
-
+                
                 <!-- Step 2 -->
                 <div class="flex items-start gap-4">
-                    <div class="flex-shrink-0 w-10 h-10 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold">
+                    <div class="flex-shrink-0 w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
                         2
                     </div>
                     <div>
-                        <h3 class="font-bold text-lg text-gray-800 mb-1">We Match You with a Tutor</h3>
-                        <p class="text-gray-600">
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">We Match You with a Tutor</h3>
+                        <p class="text-gray-600 leading-relaxed">
                             Based on your needs, we'll pair you with a tutor who specialises in your weak areas. You'll get their availability within 48 hours.
                         </p>
                     </div>
                 </div>
-
+                
                 <!-- Step 3 -->
                 <div class="flex items-start gap-4">
-                    <div class="flex-shrink-0 w-10 h-10 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold">
+                    <div class="flex-shrink-0 w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
                         3
                     </div>
                     <div>
-                        <h3 class="font-bold text-lg text-gray-800 mb-1">Book Your First Session (£15)</h3>
-                        <p class="text-gray-600">
-                            Your first 60-minute session is just £15. Further sessions start from £26. Sessions are online and convenient.
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">Book Your First Session (£15)</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Your first 60-minute session is just £15. Further sessions start from £26. Sessions are online via Zoom or Google Meet.
                         </p>
                     </div>
                 </div>
-
+                
                 <!-- Step 4 -->
                 <div class="flex items-start gap-4">
-                    <div class="flex-shrink-0 w-10 h-10 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold">
+                    <div class="flex-shrink-0 w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
                         4
                     </div>
                     <div>
-                        <h3 class="font-bold text-lg text-gray-800 mb-1">Get Personalised Help</h3>
-                        <p class="text-gray-600">
-                            Bring an essay for feedback, practice timed questions, or deep-dive into a specific topic. Every session is tailored to YOUR needs, not a generic lesson plan.
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">Get Personalised Help</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Bring an essay for feedback, practice timed questions, or deep-dive into specific topics. Every session is tailored to YOUR needs.
                         </p>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- What We Cover Section -->
-        <section class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl shadow-lg p-8 mb-12 border border-indigo-100">
-            <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">
-                What We Can Help With
-            </h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                <!-- Item 1 -->
-                <div class="flex items-start gap-3">
-                    <svg class="w-6 h-6 text-indigo-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                    </svg>
-                    <div>
-                        <p class="font-semibold text-gray-800">Essay Structure & Planning</p>
-                        <p class="text-sm text-gray-600">Learn how to structure long essays that examiners can't fault</p>
-                    </div>
-                </div>
-
-                <!-- Item 2 -->
-                <div class="flex items-start gap-3">
-                    <svg class="w-6 h-6 text-indigo-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                    </svg>
-                    <div>
-                        <p class="font-semibold text-gray-800">Evaluation Techniques</p>
-                        <p class="text-sm text-gray-600">Stop being "too descriptive": learn how to analyse instead</p>
-                    </div>
-                </div>
-
-                <!-- Item 3 -->
-                <div class="flex items-start gap-3">
-                    <svg class="w-6 h-6 text-indigo-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                    </svg>
-                    <div>
-                        <p class="font-semibold text-gray-800">Topic Deep-Dives</p>
-                        <p class="text-sm text-gray-600">Congress, Judiciary, Federalism, whatever you're stuck on</p>
-                    </div>
-                </div>
-
-                <!-- Item 4 -->
-                <div class="flex items-start gap-3">
-                    <svg class="w-6 h-6 text-indigo-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                    </svg>
-                    <div>
-                        <p class="font-semibold text-gray-800">Essay Feedback</p>
-                        <p class="text-sm text-gray-600">Bring past essays for detailed, examiner-style feedback</p>
-                    </div>
-                </div>
-
-                <!-- Item 5 -->
-                <div class="flex items-start gap-3">
-                    <svg class="w-6 h-6 text-indigo-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                    </svg>
-                    <div>
-                        <p class="font-semibold text-gray-800">Exam Technique</p>
-                        <p class="text-sm text-gray-600">Time management, question selection, and how to maximise marks</p>
-                    </div>
-                </div>
-
-                <!-- Item 6 -->
-                <div class="flex items-start gap-3">
-                    <svg class="w-6 h-6 text-indigo-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                    </svg>
-                    <div>
-                        <p class="font-semibold text-gray-800">Revision Strategies</p>
-                        <p class="text-sm text-gray-600">How to revise smart (not hard) in the weeks before exams</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pricing Section -->
-        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">
-                Pricing
-            </h2>
-
-            <div class="max-w-2xl mx-auto">
-                <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-6 border-2 border-indigo-200">
-                    <div class="text-center mb-4">
-                        <p class="text-sm text-indigo-600 font-semibold uppercase mb-2">First Session</p>
-                        <p class="text-5xl font-extrabold text-gray-900">£15</p>
-                        <p class="text-gray-600 mt-2">60 minutes • 1-on-1 • Online</p>
-                    </div>
-                    <div class="border-t border-indigo-200 my-4"></div>
-                    <p class="text-gray-700 text-center mb-4">
-                        After your first session, regular pricing is <strong>£26+ per hour</strong>, depending on tutor availability and demand.
-                    </p>
-                    <p class="text-sm text-gray-600 text-center">
-                        💡 <em>Pro tip: Book multiple sessions at once to secure your tutor's availability during busy exam periods.</em>
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- First Session Guarantee (NEW) -->
-        <section class="bg-blue-50 rounded-xl shadow-md p-8 mb-12 border-2 border-blue-200">
-            <div class="max-w-3xl mx-auto text-center">
-                <div class="inline-block bg-blue-600 text-white rounded-full p-3 mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                    </svg>
-                </div>
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">
-                    First Session Satisfaction Guarantee
+        </div>
+    </section>
+    
+    <!-- What We Cover Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    What We Can Help With
                 </h2>
-                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-                    If you're not satisfied with your first tutoring session, we'll refund you in full. No questions asked.
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Personalised support for every aspect of A-Level Politics
                 </p>
-                <p class="text-gray-600 text-sm mb-4">
-                    We're confident our tutors will help you improve. But if the session doesn't meet your expectations, just email <a href="mailto:support@thepoliticsblueprint.store" class="text-indigo-600 font-semibold underline hover:text-indigo-800">support@thepoliticsblueprint.store</a> within 24 hours of your session for a full £15 refund.
-                </p>
-                <div class="mt-6 pt-6 border-t border-blue-200">
-                    <p class="text-sm font-bold text-gray-800">
-                        Zero risk. Just results.
-                    </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <div class="flex items-start gap-4">
+                        <svg class="w-8 h-8 text-indigo-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-800 mb-2">Essay Structure & Planning</h3>
+                            <p class="text-gray-600">Learn how to structure long essays that examiners can't fault</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <div class="flex items-start gap-4">
+                        <svg class="w-8 h-8 text-indigo-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-800 mb-2">Evaluation Techniques</h3>
+                            <p class="text-gray-600">Stop being "too descriptive" - learn how to analyse deeply</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <div class="flex items-start gap-4">
+                        <svg class="w-8 h-8 text-indigo-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-800 mb-2">Topic Deep-Dives</h3>
+                            <p class="text-gray-600">Whatever you're stuck on</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <div class="flex items-start gap-4">
+                        <svg class="w-8 h-8 text-indigo-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-800 mb-2">Essay Feedback</h3>
+                            <p class="text-gray-600">Bring past essays for detailed, examiner-style feedback</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <div class="flex items-start gap-4">
+                        <svg class="w-8 h-8 text-indigo-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-800 mb-2">Exam Technique</h3>
+                            <p class="text-gray-600">Time management, question selection, and maximising marks</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <div class="flex items-start gap-4">
+                        <svg class="w-8 h-8 text-indigo-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-800 mb-2">Revision Strategies</h3>
+                            <p class="text-gray-600">How to revise smart (not hard) before exams</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Final CTA Section -->
-        <section class="bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl shadow-2xl p-8 text-center text-white mb-12">
-            <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">
-                Ready to Get Started?
+        </div>
+    </section>
+    
+    <!-- Pricing Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Simple, Transparent Pricing
+                </h2>
+            </div>
+            
+            <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-8 md:p-12 border-2 border-indigo-200 shadow-lg">
+                <div class="text-center">
+                    <p class="text-sm text-indigo-600 font-semibold uppercase mb-4">First Session Special</p>
+                    <p class="text-6xl font-extrabold text-gray-900 mb-2">£15</p>
+                    <p class="text-xl text-gray-600 mb-8">60 minutes • 1-on-1 • Online</p>
+                    
+                    <div class="border-t border-indigo-200 pt-8 mb-8">
+                        <p class="text-gray-700 mb-4">
+                            After your first session, regular pricing is <span class="font-bold text-2xl">£26+ per hour</span>
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            Pricing depends on tutor availability and demand. Book multiple sessions to secure your slot.
+                        </p>
+                    </div>
+                    
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSetsU8KfBKqlJjzXRCzGq-UFCT-8MQKL2aKOGawyX2MKMqw-g/viewform?usp=header" class="tutoring-button inline-block bg-indigo-600 text-white font-bold py-4 px-8 rounded-lg hover:bg-indigo-700 transition shadow-lg hover:shadow-xl transform hover:scale-105">
+                        Book Your First Session →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <!-- Final CTA -->
+    <section class="py-16 bg-gradient-to-br from-indigo-600 via-purple-600 to-indigo-700">
+        <div class="max-w-4xl mx-auto px-4 text-center text-white">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                Ready to Transform Your Politics Grade?
             </h2>
-            <p class="text-xl text-indigo-100 mb-8 max-w-2xl mx-auto">
-                Fill out the form below and we'll match you with the perfect tutor within 48 hours.
+            <p class="text-xl text-indigo-100 mb-8 max-w-2xl mx-auto leading-relaxed">
+                Fill out our form and get matched with your perfect tutor within 48 hours.
             </p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSetsU8KfBKqlJjzXRCzGq-UFCT-8MQKL2aKOGawyX2MKMqw-g/viewform?usp=header" class="tutoring-button inline-block bg-white text-indigo-600 font-extrabold py-4 px-10 rounded-full shadow-xl hover:bg-indigo-50 transition duration-300 transform hover:scale-105">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSetsU8KfBKqlJjzXRCzGq-UFCT-8MQKL2aKOGawyX2MKMqw-g/viewform?usp=header" class="tutoring-button inline-block bg-white text-indigo-600 font-bold py-4 px-8 rounded-lg hover:bg-gray-100 transition shadow-xl transform hover:scale-105">
                 Book Your First Session (£15) →
             </a>
             <p class="text-sm text-indigo-200 mt-6">
                 ✅ No commitment required • ✅ Cancel anytime • ✅ Flexible scheduling
             </p>
-        </section>
-
-        <!-- Alternative: Revision Guides CTA -->
-        <section class="bg-gray-50 rounded-xl shadow-md p-8 text-center border border-gray-200">
-            <h3 class="text-2xl font-bold text-gray-800 mb-3">
-                Prefer Self-Study?
-            </h3>
-            <p class="text-gray-600 mb-6 max-w-xl mx-auto">
-                If you're not ready for tutoring, check out our revision guides. Pre-built essay structures, evaluation frameworks, and high-impact evidence for every US Politics topic.
-            </p>
-            <a href="index.html" class="inline-block bg-indigo-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transition duration-300">
-                View Revision Guides
-            </a>
-        </section>
-    </div>
-
-    <!-- JavaScript for Event Tracking -->
+        </div>
+    </section>
+    
+    <!-- Alternative CTA -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="bg-gray-50 rounded-2xl p-8 md:p-12 text-center">
+                <h3 class="text-2xl font-bold text-gray-800 mb-3">
+                    Prefer Self-Study?
+                </h3>
+                <p class="text-gray-600 mb-6 max-w-xl mx-auto">
+                    If you're not ready for tutoring, check out our US revision guides or UK flashcards. Pre-built essay structures, arguments & counter-arguments, and high-impact evidence for every US and UK Politics topic.
+                </p>
+                <a href="us-politics.html" class="inline-block bg-indigo-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-indigo-700 transition shadow-lg">
+                    View US Revision Guides
+                </a>
+              <br>
+              <br>
+              <a href="uk-politics.html" class="inline-block bg-indigo-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-indigo-700 transition shadow-lg">
+                    View UK Flashcards
+                </a>
+            </div>
+        </div>
+      
+      
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <svg class="w-8 h-8 text-indigo-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4 2.5a.5.5 0 01.5-.5h15a.5.5 0 01.5.5v19a.5.5 0 01-.5.5h-15a.5.5 0 01-.5-.5v-19z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            <path d="M7 6h10M7 10h10M7 14h6M7 18h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                            <path d="M17.792 18.257l2.454 1.258-1.527-2.784 2.454-1.258-2.721-.295-1.527-2.784-1.527 2.784-2.72.295 2.454 1.258-1.527 2.784 2.454-1.258z" fill="currentColor" stroke="currentColor" stroke-width="0" />
+                        </svg>
+                        <span class="font-bold text-white">The A* Politics Blueprint</span>
+                    </div>
+                    <p class="text-sm text-gray-400">
+                        Student-made revision guides crafted by an LSE student who achieved an A* in Politics.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="us-politics.html" class="hover:text-white transition">US Politics Guides</a></li>
+                        <li><a href="uk-politics.html" class="hover:text-white transition">UK Politics Flashcards</a></li>
+                        <li><a href="essay-structure.html" class="hover:text-white transition">Essay Structure Guide</a></li>
+                        <li><a href="free-resource.html" class="hover:text-white transition">Free Resources</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Contact & Support</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <a href="mailto:support@thepoliticsblueprint.store" class="hover:text-white transition">
+                                support@thepoliticsblueprint.store
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/the-politics-blueprint-a79b71383/" class="hover:text-white transition">
+                                LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tutoring.html" class="hover:text-white transition">
+                                Book Tutoring Session
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2026 The A* Politics Blueprint. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
     <script>
+        // Event tracking code
         const tutoringButtons = document.querySelectorAll('.tutoring-button');
 
         tutoringButtons.forEach(button => {
@@ -430,7 +563,6 @@
                     'event_category': 'Call_to_Action',
                     'event_label': 'Book first session'
                 });
-                console.log('Event sent: tutoring_inquiry_click');
             });
         });
 
@@ -445,13 +577,12 @@
                     'event_label': 'Scrolled to 90% of page'
                 });
                 hasScrolledToBottom = true;
-                console.log('Event sent: scroll_depth_90');
                 window.removeEventListener('scroll', scrollHandler);
             }
         };
 
         window.addEventListener('scroll', scrollHandler);
     </script>
-
+    
 </body>
 </html>
