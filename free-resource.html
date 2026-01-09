@@ -1,54 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WN81B5CMGH"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-WN81B5CMGH');
     </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free A-Level Politics Resources | The A* Blueprint</title>
-
+    <meta name="description" content="Free revision guides, essay frameworks and evaluation techniques for A-Level Politics. From LSE student to you.">
+    
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="manifest" href="site.webmanifest">
     
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
     <style>
-        body {
+        body { 
             font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6;
+            overflow-x: hidden;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
     </style>
 </head>
-
-<body class="bg-gray-100">
-
-    <!-- Support Bar -->
-    <div class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 px-4 text-center shadow-lg">
-        <p class="text-sm sm:text-base">
-            Need help? Email us at 
-            <a href="mailto:support@thepoliticsblueprint.store" class="text-yellow-300 font-semibold hover:text-white transition-colors underline">
+<body class="bg-white">
+    
+    <!-- Top Support Bar -->
+    <div class="bg-indigo-600 text-white py-2 px-4 text-center text-sm">
+        <p>
+            Need help? 
+            <a href="mailto:support@thepoliticsblueprint.store" class="underline hover:text-indigo-200">
                 support@thepoliticsblueprint.store
             </a>
-            or 
-            <a href="tutoring.html" class="text-yellow-300 font-semibold hover:text-white transition-colors underline">
-                book a strategy call
+            <span class="hidden sm:inline">|</span>
+            <a href="tutoring.html" class="underline hover:text-indigo-200 sm:ml-2">
+                Book a strategy call
             </a>
         </p>
     </div>
-
-    <div class="container mx-auto px-4 py-8 mt-16 max-w-6xl">
-        
-              <!-- Main Navigation -->
+    
+    <!-- Announcement Bar -->
+    <div class="bg-gradient-to-r from-emerald-500 to-teal-500 text-white py-2 px-4 text-center text-sm font-medium">
+        <p>
+            🎉 NEW: UK Politics Flashcards Now Live! | 70% OFF all guides | 
+            <a href="https://www.linkedin.com/in/the-politics-blueprint-a79b71383/" class="underline hover:text-white font-semibold">
+                Follow on LinkedIn
+            </a>
+        </p>
+    </div>
+    
+    <!-- Main Navigation -->
     <nav class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-4">
             <!-- Primary Nav -->
@@ -65,10 +78,10 @@
                 
                 <!-- Main Nav Links -->
                 <div class="flex items-center gap-1">
-                    <a href="index.html" class="px-5 py-2.5 text-base text-gray-900 font-semibold rounded-lg bg-indigo-50 hover:bg-indigo-100 transition">
+                    <a href="index.html" class="px-5 py-2.5 text-base text-gray-700 font-semibold hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition">
                         Home
                     </a>
-                    <a href="free-resource.html" class="px-5 py-2.5 text-base text-gray-700 font-semibold hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition">
+                    <a href="free-resource.html" class="px-5 py-2.5 text-base text-gray-900 font-semibold rounded-lg bg-indigo-50 hover:bg-indigo-100 transition">
                         Free Resources
                     </a>
                     <a href="tutoring.html" class="px-5 py-2.5 text-base text-gray-700 font-semibold hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition">
@@ -77,268 +90,341 @@
                 </div>
             </div>
             
-            
-                
-                
+            <!-- Secondary Product Nav -->
+            <div class="flex items-center gap-2 pb-4 overflow-x-auto border-t border-gray-100 pt-3">
+                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider mr-2">Browse:</span>
+                <a href="us-politics.html" class="px-4 py-2 text-sm font-semibold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 rounded-full whitespace-nowrap transition">
+                    US Politics
+                </a>
+                <a href="essay-structure.html" class="px-4 py-2 text-sm font-semibold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 rounded-full whitespace-nowrap transition">
+                    Essay Structure
+                </a>
+                <a href="uk-politics.html" class="px-4 py-2 text-sm font-semibold text-purple-700 bg-purple-50 hover:bg-purple-100 rounded-full whitespace-nowrap transition">
+                    UK Politics
+                </a>
+            </div>
         </div>
     </nav>
-
-
-        <!-- NEW SCOTUS GUIDE (Top Hero) -->
-        <section class="bg-gradient-to-br from-indigo-600 to-purple-700 rounded-2xl shadow-2xl p-8 mb-12 text-white">
-            <div class="flex flex-col md:flex-row items-center gap-6">
-                <div class="flex-shrink-0">
-                    <div class="p-4 bg-white bg-opacity-20 rounded-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
-                        </svg>
-                    </div>
+    
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-gray-50 via-white to-indigo-50 py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                    <span>✨</span>
+                    <span>Start improving your essays today - completely free</span>
                 </div>
-                <div class="flex-1">
-                    <div class="inline-block bg-red-500 text-white font-bold px-3 py-1 rounded-full text-xs mb-3">
-                        🔥 NEW RESOURCE
-                    </div>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold mb-3">How to Use Supreme Court Cases in Essays</h2>
-                    <p class="text-indigo-50 text-lg mb-4">
-                        Stop listing cases. Start using them for A* evaluation. See before/after examples of Brown, Citizens United, and Dobbs.
-                    </p>
-                    <ul class="space-y-2 mb-6 text-indigo-50 text-sm">
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-yellow-300 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>3 essential cases with Level 4 → A* transformations</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-yellow-300 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Quick reference table - which cases for which questions</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-yellow-300 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>The 4-step pattern for analysing any SCOTUS case</span>
-                        </li>
-                    </ul>
-                    <a href="https://blueprintpolitics.gumroad.com/l/botis" class="gumroad-button inline-block bg-white text-indigo-600 font-extrabold py-3 px-8 rounded-full shadow-xl hover:bg-indigo-50 transition duration-300 transform hover:scale-105">
-                        Download Guide (Free) →
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- S-T-A-R Framework (Second Hero) -->
-        <section class="bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl shadow-2xl p-8 mb-12 text-white">
-            <div class="flex flex-col md:flex-row items-center gap-6">
-                <div class="flex-shrink-0">
-                    <div class="p-4 bg-white bg-opacity-20 rounded-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-                        </svg>
-                    </div>
-                </div>
-                <div class="flex-1">
-                    <div class="inline-block bg-yellow-400 text-gray-900 font-bold px-3 py-1 rounded-full text-xs mb-3">
-                        ⭐ MOST POPULAR
-                    </div>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold mb-3">The S-T-A-R Evaluation Framework</h2>
-                    <p class="text-teal-50 text-lg mb-4">
-                        The 4-step system that guarantees high-level evaluation in every essay. Works on any Politics topic.
-                    </p>
-                    <ul class="space-y-2 mb-6 text-teal-50 text-sm">
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-yellow-300 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span><strong>S</strong>cope - How widespread is the impact?</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-yellow-300 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span><strong>T</strong>ime - Short-term win or long-term disaster?</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-yellow-300 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span><strong>A</strong>lternatives - What's the counter-argument?</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-5 h-5 text-yellow-300 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span><strong>R</strong>eform - Minor flaw or fatal breakdown?</span>
-                        </li>
-                    </ul>
-                    <a href="https://blueprintpolitics.gumroad.com/l/xncoa" class="gumroad-button inline-block bg-white text-teal-600 font-extrabold py-3 px-8 rounded-full shadow-xl hover:bg-teal-50 transition duration-300 transform hover:scale-105">
-                        Download Framework (Free) →
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Other Free Resources -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">More Free Resources</h2>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 
-                <!-- Featured Article: The End of Federalism -->
-                <div class="bg-white rounded-xl shadow-lg p-6 border-2 border-indigo-200 hover:shadow-xl transition duration-300">
-                    <div class="flex items-center space-x-3 mb-4">
-                        <span class="inline-block bg-indigo-500 text-white rounded-full p-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.488 9.222 5 7.5 5S4.168 5.488 3 6.253v13C4.168 18.488 5.778 18 7.5 18s3.332.488 4.5 1.253m0-13C13.168 5.488 14.778 5 16.5 5c1.722 0 3.332.488 4.5 1.253v13C19.832 18.488 18.222 18 16.5 18c-1.722 0-3.332.488-4.5 1.253"/>
-                            </svg>
-                        </span>
-                        <div>
-                            <p class="text-xs text-indigo-600 font-semibold uppercase tracking-wide">Micro-Lesson</p>
-                            <p class="text-sm text-gray-500">5 min read</p>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
+                    Free Resources to<br/>
+                    <span class="gradient-text">Transform Your Politics Essays</span>
+                </h1>
+                
+                <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+                    Get instant access to evaluation frameworks, essay structures, and exam techniques that helped me achieve an A* in Politics.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Resources Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Most Popular Free Resources
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Thousands of students have used these to improve their grades
+                </p>
+            </div>
+            
+            <!-- NEW SCOTUS GUIDE -->
+            <div class="mb-8">
+                <div class="group bg-gradient-to-br from-indigo-600 to-purple-700 rounded-xl shadow-2xl p-8 text-white hover:shadow-3xl transition-all duration-300">
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="flex-shrink-0">
+                            <div class="p-6 bg-white bg-opacity-20 rounded-2xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="inline-block bg-red-500 text-white font-bold px-4 py-2 rounded-full text-xs mb-4">
+                                🔥 NEW RESOURCE
+                            </div>
+                            <h3 class="text-3xl sm:text-4xl font-extrabold mb-4">How to Use Supreme Court Cases in Essays</h3>
+                            <p class="text-indigo-100 text-lg mb-6 leading-relaxed">
+                                Stop listing cases. Start using them for A* evaluation. See before/after examples of Brown, Citizens United, and Dobbs.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
+                                <div class="space-y-3 flex-1">
+                                    <div class="flex items-start gap-3">
+                                        <svg class="w-6 h-6 text-yellow-300 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span>3 essential cases with Level 4 → A* transformations</span>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <svg class="w-6 h-6 text-yellow-300 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span>The 4-step pattern for analysing any SCOTUS case</span>
+                                    </div>
+                                </div>
+                                <a href="https://blueprintpolitics.gumroad.com/l/botis" class="gumroad-button inline-block bg-white text-indigo-600 font-extrabold py-4 px-8 rounded-full shadow-xl hover:bg-indigo-50 transition duration-300 transform hover:scale-105">
+                                    Download Guide (Free) →
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3 leading-tight">The End of US Federalism?</h3>
-                    <p class="text-gray-600 mb-4">
-                        Has the USA's 'layer-cake' system been completely replaced by a 'marble-cake' of overreaching federal power?
-                    </p>
-                    <div class="flex items-center justify-between">
-                        <a href="https://blueprintpolitics.gumroad.com/l/xgcqx" class="gumroad-button inline-flex items-center gap-2 bg-indigo-600 text-white font-semibold py-2 px-5 rounded-full shadow-md hover:bg-indigo-700 transition duration-300">
-                            Read Lesson
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                            </svg>
-                        </a>
-                        <span class="text-green-600 font-bold text-sm">FREE</span>
-                    </div>
                 </div>
-
-                <!-- Featured Article: Top 5 Common Mistakes -->
-                <div class="bg-white rounded-xl shadow-lg p-6 border-2 border-purple-200 hover:shadow-xl transition duration-300">
-                    <div class="flex items-center space-x-3 mb-4">
-                        <span class="inline-block bg-purple-500 text-white rounded-full p-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-                            </svg>
-                        </span>
-                        <div>
-                            <p class="text-xs text-purple-600 font-semibold uppercase tracking-wide">Strategy Guide</p>
-                            <p class="text-sm text-gray-500">8 min read</p>
+            </div>
+            
+            <!-- S-T-A-R Framework -->
+            <div class="mb-8">
+                <div class="group bg-gradient-to-br from-teal-500 to-emerald-600 rounded-xl shadow-2xl p-8 text-white hover:shadow-3xl transition-all duration-300">
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="flex-shrink-0">
+                            <div class="p-6 bg-white bg-opacity-20 rounded-2xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="inline-block bg-yellow-400 text-gray-900 font-bold px-4 py-2 rounded-full text-xs mb-4">
+                                ⭐ MOST POPULAR
+                            </div>
+                            <h3 class="text-3xl sm:text-4xl font-extrabold mb-4">The S-T-A-R Evaluation Framework</h3>
+                            <p class="text-teal-50 text-lg mb-6 leading-relaxed">
+                                The 4-step system that guarantees high-level evaluation in every essay. Works on any Politics topic.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
+                                <div class="space-y-3 flex-1">
+                                    <div class="flex items-start gap-3">
+                                        <svg class="w-6 h-6 text-yellow-300 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span><strong>S</strong>cope, <strong>T</strong>ime, <strong>A</strong>lternatives, <strong>R</strong>eform</span>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <svg class="w-6 h-6 text-yellow-300 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span>Turn descriptive answers into analytical excellence</span>
+                                    </div>
+                                </div>
+                                <a href="https://blueprintpolitics.gumroad.com/l/xncoa" class="gumroad-button inline-block bg-white text-teal-600 font-extrabold py-4 px-8 rounded-full shadow-xl hover:bg-teal-50 transition duration-300 transform hover:scale-105">
+                                    Download Framework (Free) →
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3 leading-tight">Top 5 Common Mistakes</h3>
-                    <p class="text-gray-600 mb-4">
-                        Avoid the pitfalls that cost students 10+ marks per essay.
-                    </p>
-                    <div class="flex items-center justify-between">
-                        <a href="https://blueprintpolitics.gumroad.com/l/tfxvkw" class="gumroad-button inline-flex items-center gap-2 bg-purple-600 text-white font-semibold py-2 px-5 rounded-full shadow-md hover:bg-purple-700 transition duration-300">
-                            Read Article
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                            </svg>
-                        </a>
-                        <span class="text-green-600 font-bold text-sm">FREE</span>
-                    </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Coming Soon Resources -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">Coming Soon</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        </div>
+    </section>
+    
+    <!-- Other Resources Grid -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    More Free Resources
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Quick reads and strategy guides to boost your marks
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 
-                <!-- Exam Checklist -->
-                <div class="bg-white rounded-xl shadow-md p-6 opacity-75">
-                    <div class="flex items-center space-x-3 mb-4">
-                        <span class="inline-block bg-green-500 text-white rounded-full p-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
-                            </svg>
-                        </span>
-                        <h3 class="text-xl font-bold text-gray-800">Exam Checklist</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">A comprehensive guide to all key topics and concepts for your final exam.</p>
-                    <div class="inline-block bg-gray-200 text-gray-600 font-semibold px-4 py-2 rounded-full text-sm">
-                        Coming Soon
+                <!-- The End of Federalism -->
+                <div class="group bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-gray-200 hover:border-indigo-400 transform hover:-translate-y-1">
+                    <div class="p-8">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="bg-indigo-600 p-3 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.488 9.222 5 7.5 5S4.168 5.488 3 6.253v13C4.168 18.488 5.778 18 7.5 18s3.332.488 4.5 1.253m0-13C13.168 5.488 14.778 5 16.5 5c1.722 0 3.332.488 4.5 1.253v13C19.832 18.488 18.222 18 16.5 18c-1.722 0-3.332.488-4.5 1.253"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold text-indigo-600 bg-indigo-100 px-3 py-1 rounded-full">MICRO-LESSON</span>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-indigo-600 transition">
+                            The End of US Federalism?
+                        </h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Has the USA's 'layer-cake' system been completely replaced by a 'marble-cake' of overreaching federal power?
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t-2 border-gray-200">
+                            <a href="https://blueprintpolitics.gumroad.com/l/xgcqx" class="gumroad-button text-indigo-600 font-semibold flex items-center gap-2 group-hover:gap-3 transition-all">
+                                <span>Read Lesson</span>
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                           
+                        </div>
                     </div>
                 </div>
-
-                <!-- Sample Essays -->
-                <div class="bg-white rounded-xl shadow-md p-6 opacity-75">
-                    <div class="flex items-center space-x-3 mb-4">
-                        <span class="inline-block bg-pink-500 text-white rounded-full p-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-                            </svg>
-                        </span>
-                        <h3 class="text-xl font-bold text-gray-800">A* Sample Essays</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Real essays that achieved top marks, with examiner-style annotations.</p>
-                    <div class="inline-block bg-gray-200 text-gray-600 font-semibold px-4 py-2 rounded-full text-sm">
-                        Coming Soon
+                
+                <!-- Top 5 Common Mistakes -->
+                <div class="group bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-gray-200 hover:border-purple-400 transform hover:-translate-y-1">
+                    <div class="p-8">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="bg-purple-600 p-3 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold text-purple-600 bg-purple-100 px-3 py-1 rounded-full">STRATEGY GUIDE</span>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-purple-600 transition">
+                            Top 5 Common Mistakes
+                        </h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Avoid the pitfalls that cost students 10+ marks per essay.
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t-2 border-gray-200">
+                            <a href="https://blueprintpolitics.gumroad.com/l/tfxvkw" class="gumroad-button text-purple-600 font-semibold flex items-center gap-2 group-hover:gap-3 transition-all">
+                                <span>Read Article</span>
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                           
+                        </div>
                     </div>
                 </div>
+                
+                <!-- Coming Soon Card -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 opacity-75">
+                    <div class="p-8">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="bg-gray-400 p-3 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold text-gray-500 bg-gray-100 px-3 py-1 rounded-full">COMING SOON</span>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">
+                            More Resources Coming
+                        </h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            A* sample essays, exam checklists, and more revision guides launching soon.
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t-2 border-gray-200">
+                            <span class="text-gray-500">Check back soon</span>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-        </section>
-
-        <!-- CTA Section: Paid Guides -->
-        <section class="bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl shadow-2xl p-8 mb-12 text-white text-center">
-            <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">Want More?</h2>
-            <p class="text-xl text-indigo-100 mb-6 max-w-2xl mx-auto">
-                These free resources are just the beginning. Get pre-built essay structures, evaluation frameworks, and high-impact evidence for every US Politics topic.
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-br from-indigo-600 via-purple-600 to-indigo-700">
+        <div class="max-w-4xl mx-auto px-4 text-center text-white">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                Want More Than Free Resources?
+            </h2>
+            <p class="text-xl text-indigo-100 mb-8 max-w-2xl mx-auto leading-relaxed">
+                Get complete revision guides with pre-built essay structures, evaluation frameworks, and high-impact evidence for every topic.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a href="index.html#individual-guides" class="inline-block bg-white text-indigo-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-50 transition duration-300 transform hover:scale-105">
-                    View Full Revision Guides →
+                <a href="us-politics.html" class="inline-block bg-white text-indigo-600 font-bold py-4 px-8 rounded-lg hover:bg-gray-100 transition shadow-xl transform hover:scale-105">
+                    View US Revision Guides
                 </a>
-                <p class="text-sm text-indigo-200">
-                    Complete bundle: £12.50 (save 70%)
+                <p class="text-indigo-200">
+                    Complete bundle: £12.50 
                 </p>
             </div>
-        </section>
-
-        <!-- 30-Day Guarantee Section -->
-        <section class="bg-green-50 rounded-xl shadow-md p-8 mb-12 border-2 border-green-200">
-            <div class="max-w-3xl mx-auto text-center">
-                <div class="inline-block bg-green-600 text-white rounded-full p-3 mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                    </svg>
-                </div>
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">
-                    30-Day Money-Back Guarantee
-                </h2>
-                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-                    Try our full revision guide bundle for <strong>4 weeks</strong>. If your essay marks don't improve, email us at <a href="mailto:support@thepoliticsblueprint.store" class="text-indigo-600 font-semibold underline hover:text-indigo-800">support@thepoliticsblueprint.store</a> for a <strong>full refund</strong>. No questions asked.
+          <br>
+          <p class="text-xl text-indigo-100 mb-8 max-w-2xl mx-auto leading-relaxed">
+                Get complete flashcards with pre-built arguments, counter-arguments, and high-impact evidence for every topic.
+            </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="uk-politics.html" class="inline-block bg-white text-indigo-600 font-bold py-4 px-8 rounded-lg hover:bg-gray-100 transition shadow-xl transform hover:scale-105">
+                    View UK Flashcards
+                </a>
+                <p class="text-indigo-200">
+                    Complete bundle: £12.50 
                 </p>
-                <p class="text-gray-600 text-sm">
-                    ✅ Use the guides on real practice essays<br>
-                    ✅ See if your marks improve<br>
-                    ✅ If not satisfied within 30 days, get your money back
-                </p>
-                <div class="mt-6 pt-6 border-t border-green-200">
-                    <p class="text-sm font-bold text-gray-800">
-                        We're that confident they'll help you get an A*.
+            </div>
+        </div>
+    </section>
+    
+   
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <svg class="w-8 h-8 text-indigo-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4 2.5a.5.5 0 01.5-.5h15a.5.5 0 01.5.5v19a.5.5 0 01-.5.5h-15a.5.5 0 01-.5-.5v-19z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            <path d="M7 6h10M7 10h10M7 14h6M7 18h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                            <path d="M17.792 18.257l2.454 1.258-1.527-2.784 2.454-1.258-2.721-.295-1.527-2.784-1.527 2.784-2.72.295 2.454 1.258-1.527 2.784 2.454-1.258z" fill="currentColor" stroke="currentColor" stroke-width="0" />
+                        </svg>
+                        <span class="font-bold text-white">The A* Politics Blueprint</span>
+                    </div>
+                    <p class="text-sm text-gray-400">
+                        Student-made revision guides crafted by an LSE student who achieved an A* in Politics.
                     </p>
                 </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="us-politics.html" class="hover:text-white transition">US Politics Guides</a></li>
+                        <li><a href="uk-politics.html" class="hover:text-white transition">UK Politics Flashcards</a></li>
+                        <li><a href="essay-structure.html" class="hover:text-white transition">Essay Structure Guide</a></li>
+                        <li><a href="free-resource.html" class="hover:text-white transition">Free Resources</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Contact & Support</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <a href="mailto:support@thepoliticsblueprint.store" class="hover:text-white transition">
+                                support@thepoliticsblueprint.store
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/the-politics-blueprint-a79b71383/" class="hover:text-white transition">
+                                LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tutoring.html" class="hover:text-white transition">
+                                Book Tutoring Session
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </section>
-
-        <!-- Footer CTA: Tutoring -->
-        <section class="bg-white rounded-xl shadow-lg p-8 text-center">
-            <h2 class="text-3xl font-bold text-gray-900 mb-3">Need 1-on-1 Help?</h2>
-            <p class="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
-                Our tutoring helps you go from stressed to confident. First session just £15.
-            </p>
-            <a href="tutoring.html" class="tutoring-button inline-block bg-indigo-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105">
-                Enquire About Tutoring
-            </a>
-        </section>
-    </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2026 The A* Politics Blueprint. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
     
-    <!-- JavaScript for Event Tracking -->
+    <!-- Scripts -->
+    <script src="https://gumroad.com/js/gumroad.js"></script>
     <script>
+        // Event tracking code
         const tutoringButtons = document.querySelectorAll('.tutoring-button');
         const gumroadLinks = document.querySelectorAll('.gumroad-button');
 
@@ -348,17 +434,16 @@
                     'event_category': 'Call_to_Action',
                     'event_label': 'Enquire about tutoring'
                 });
-                console.log('Event sent: tutoring_inquiry_click');
             });
         });
 
         gumroadLinks.forEach(link => {
             link.addEventListener('click', () => {
-                const productCard = link.closest('.bg-white, .bg-teal-50, .bg-gradient-to-br');
+                const productCard = link.closest('div');
                 let productTitle = 'Unknown Product';
 
                 if (productCard) {
-                    const titleElement = productCard.querySelector('h2, h3');
+                    const titleElement = productCard.querySelector('h3');
                     if (titleElement) {
                         productTitle = titleElement.innerText;
                     }
@@ -368,27 +453,9 @@
                     'event_category': 'Product_Link',
                     'event_label': productTitle
                 });
-                console.log(`Event sent: product_link_click - ${productTitle}`);
             });
         });
-        
-        let hasScrolledToBottom = false;
-        const scrollHandler = () => {
-            const scrollPosition = window.scrollY + window.innerHeight;
-            const totalHeight = document.body.offsetHeight;
-
-            if (scrollPosition >= totalHeight * 0.9 && !hasScrolledToBottom) {
-                gtag('event', 'scroll_depth_90', {
-                    'event_category': 'Engagement',
-                    'event_label': 'Scrolled to 90% of page'
-                });
-                hasScrolledToBottom = true;
-                console.log('Event sent: scroll_depth_90');
-                window.removeEventListener('scroll', scrollHandler);
-            }
-        };
-
-        window.addEventListener('scroll', scrollHandler);
     </script>
+    
 </body>
 </html>
