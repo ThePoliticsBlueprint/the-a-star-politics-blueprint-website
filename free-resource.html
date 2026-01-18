@@ -161,7 +161,7 @@
                                         <span>The 4-step pattern for analysing any SCOTUS case</span>
                                     </div>
                                 </div>
-                                <a href="https://thepoliticsblueprint.lemonsqueezy.com/checkout/buy/69535bd2-a343-4135-8efb-7378e91bb3ec" class="gumroad-button inline-block bg-white text-indigo-600 font-extrabold py-4 px-8 rounded-full shadow-xl hover:bg-indigo-50 transition duration-300 transform hover:scale-105">
+                                <a href="https://thepoliticsblueprint.lemonsqueezy.com/checkout/buy/69535bd2-a343-4135-8efb-7378e91bb3ec" class="lemonsqueezy-button inline-block bg-white text-indigo-600 font-extrabold py-4 px-8 rounded-full shadow-xl hover:bg-indigo-50 transition duration-300 transform hover:scale-105">
                                     Download Guide (Free) →
                                 </a>
                             </div>
@@ -457,12 +457,10 @@
         </div>
     </footer>
     
-    <!-- Scripts -->
-    <script src="https://gumroad.com/js/gumroad.js"></script>
+
     <script>
         // Event tracking code
         const tutoringButtons = document.querySelectorAll('.tutoring-button');
-        const gumroadLinks = document.querySelectorAll('.gumroad-button');
 
         tutoringButtons.forEach(button => {
             button.addEventListener('click', () => {
@@ -473,10 +471,7 @@
             });
         });
 
-        gumroadLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                const productCard = link.closest('div');
-                let productTitle = 'Unknown Product';
+
 
                 if (productCard) {
                     const titleElement = productCard.querySelector('h3');
